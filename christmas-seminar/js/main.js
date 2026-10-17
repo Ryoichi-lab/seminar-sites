@@ -50,10 +50,10 @@
   function setupSnow() {
     var box = document.querySelector('[data-snow]');
     if (!box || reduceMotion) return;
-    for (var i = 0; i < 28; i++) {
-      var crystal = i % 7 === 0;
+    for (var i = 0; i < 60; i++) {
+      var crystal = i % 10 === 0;
       var f = document.createElement('span');
-      var size = crystal ? 14 + Math.random() * 8 : 3 + Math.random() * 4;
+      var size = crystal ? 14 + Math.random() * 8 : 2.5 + Math.random() * 5;
       var dur = 10 + Math.random() * 10;
       f.className = 'flake' + (crystal ? ' flake--crystal' : '');
       f.style.left = (Math.random() * 100) + '%';
