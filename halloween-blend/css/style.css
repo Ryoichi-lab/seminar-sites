@@ -766,3 +766,100 @@ input[type="range"]:focus-visible { outline: 2px solid var(--green); outline-off
 @media (prefers-reduced-motion: reduce) {
   .js .fade { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------- ストーリーのクイズ ---------- */
+.quiz { text-align: center; }
+.quiz__no {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--font-pop);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: .08em;
+}
+.quiz .pumpkin__title { margin-bottom: 16px; }
+.quiz__q { font-weight: 700; font-size: 15.5px; line-height: 1.75; margin-bottom: 18px; }
+
+.quiz__choices { display: grid; gap: 10px; max-width: 420px; margin: 0 auto; }
+@media (min-width: 600px) { .quiz__choices { grid-template-columns: repeat(3, 1fr); max-width: none; } }
+.quiz__choice {
+  position: relative;
+  min-height: 54px;
+  padding: 10px 16px;
+  border: 3px solid var(--green);
+  border-radius: 18px;
+  background: var(--cream-2);
+  color: var(--green);
+  font-weight: 900;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--green);
+  transition: transform .15s, box-shadow .15s, background-color .25s, color .25s, opacity .25s;
+  -webkit-tap-highlight-color: transparent;
+}
+.quiz__choice:hover { background: #fff; }
+.quiz__choice:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--green); }
+.quiz__choice:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+.quiz__choice.is-correct { background: var(--green); color: #fff; }
+.quiz__choice.is-correct::after,
+.quiz__choice.is-wrong::after {
+  position: absolute;
+  right: 16px; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-pop);
+  font-size: 20px;
+}
+.quiz__choice.is-correct::after { content: "✓"; }
+.quiz__choice.is-wrong { border-color: var(--red); background: #F6DADA; color: var(--red); box-shadow: 0 4px 0 var(--red); animation: shake .45s ease; }
+.quiz__choice.is-wrong::after { content: "✕"; }
+.quiz.is-answered .quiz__choice { cursor: default; pointer-events: none; }
+.quiz.is-answered .quiz__choice:not(.is-correct):not(.is-wrong) { opacity: .4; }
+@keyframes shake {
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.quiz__result {
+  min-height: 0;
+  margin-top: 14px;
+  font-family: var(--font-pop), var(--font-ja);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--green);
+}
+.quiz__result:empty { display: none; }
+.quiz__result.is-wrong { color: var(--red); font-size: 18px; }
+
+.quiz__answer {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .6);
+  text-align: left;
+}
+.quiz__answer::before {
+  content: "こたえ";
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.js .quiz:not(.is-answered) .quiz__answer { display: none; }
+.js .quiz.is-answered .quiz__answer { animation: pop-in .5s ease; }
+
+/* キーワードは答えると「？」から開く */
+.js .tag:not(.is-open) { color: rgba(181, 56, 58, .45); border-style: dashed; }
+.tag.is-open { animation: tag-open .6s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes tag-open { from { transform: scale(.4) rotate(-20deg); opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz__choice.is-wrong, .js .quiz.is-answered .quiz__answer, .tag.is-open { animation: none; }
+}

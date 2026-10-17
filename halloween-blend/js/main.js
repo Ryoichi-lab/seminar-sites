@@ -256,9 +256,44 @@
     return { reveal: reveal };
   }
 
+  /* ---------- ストーリーのクイズ ---------- */
+  function setupQuiz() {
+    var tags = {};
+    document.querySelectorAll('[data-tag]').forEach(function (t) {
+      tags[t.getAttribute('data-tag')] = t;
+      t.textContent = '？';
+    });
+
+    document.querySelectorAll('[data-quiz]').forEach(function (quiz) {
+      var choices = Array.prototype.slice.call(quiz.querySelectorAll('.quiz__choice'));
+      var correct = quiz.querySelector('[data-correct]');
+      var result = quiz.querySelector('[data-quiz-result]');
+
+      choices.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          if (quiz.classList.contains('is-answered')) return;
+          var ok = btn === correct;
+          correct.classList.add('is-correct');
+          if (!ok) btn.classList.add('is-wrong');
+          choices.forEach(function (c) { c.setAttribute('aria-disabled', 'true'); });
+          result.textContent = ok ? '正解！' : 'ざんねん！ 正解は「' + correct.textContent + '」';
+          result.classList.toggle('is-wrong', !ok);
+          quiz.classList.add('is-answered');
+
+          var tag = tags[quiz.getAttribute('data-keyword')];
+          if (tag) {
+            tag.textContent = tag.getAttribute('data-word');
+            tag.classList.add('is-open');
+          }
+        });
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setupPlaceholders();
     setupLeaves();
+    setupQuiz();
     setupReveal();
     setupProgress();
     var memo = setupMemo();

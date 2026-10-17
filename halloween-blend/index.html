@@ -105,30 +105,53 @@
         <h2 class="sec-head__ja">ブレンドが生まれた背景</h2>
       </div>
 
+      <!-- ===== Q1 ハロウィンのはじまり =====
+           選択肢は data-correct が付いたものが正解。説明文（quiz__answer）は POP の文言そのまま。 -->
       <article class="pumpkin pumpkin--orange fade">
-        <div class="pumpkin__body story-card">
-          <div class="ph ph--round story-card__img"><img src="images/jack-o-lantern.jpg" alt="ジャック・オー・ランタン"></div>
+        <div class="pumpkin__body story-card quiz" data-quiz data-keyword="france">
+          <p class="quiz__no">Q1</p>
           <h3 class="pumpkin__title">ハロウィンのはじまり</h3>
-          <p>ハロウィンのはじまりは、古代ヨーロッパにさかのぼります。<br>
-            ケルト族という民族の「サウィン」という祭礼が起源とされています。<br>
-            ケルト族は現在のアイルランド、イギリス、<strong class="kw">フランス</strong>周辺に住んでいました。</p>
+          <div class="ph ph--round story-card__img"><img src="images/jack-o-lantern.jpg" alt="ジャック・オー・ランタン"></div>
+          <p class="quiz__q">ハロウィンの起源とされる祭礼をおこなっていたケルト族。<br>アイルランド、イギリスのほかに、現在のどこ周辺に住んでいた？</p>
+          <div class="quiz__choices" role="group" aria-label="Q1の選択肢">
+            <button type="button" class="quiz__choice">エジプト</button>
+            <button type="button" class="quiz__choice" data-correct>フランス</button>
+            <button type="button" class="quiz__choice">インド</button>
+          </div>
+          <p class="quiz__result" data-quiz-result aria-live="polite"></p>
+          <div class="quiz__answer" data-quiz-answer>
+            <p>ハロウィンのはじまりは、古代ヨーロッパにさかのぼります。<br>
+              ケルト族という民族の「サウィン」という祭礼が起源とされています。<br>
+              ケルト族は現在のアイルランド、イギリス、<strong class="kw">フランス</strong>周辺に住んでいました。</p>
+          </div>
         </div>
       </article>
 
+      <!-- ===== Q2 ハロウィンの料理 ===== -->
       <article class="pumpkin pumpkin--orange2 fade">
-        <div class="pumpkin__body story-card">
+        <div class="pumpkin__body story-card quiz" data-quiz data-keyword="spice">
+          <p class="quiz__no">Q2</p>
           <h3 class="pumpkin__title">ハロウィンの料理</h3>
-          <p>ハロウィンの本場のアイルランドでは、たくさんの伝統的なハロウィン料理があります。<br>
-            その多くで、<strong class="kw">スパイス</strong>が使用されています！</p>
+          <p class="quiz__q">ハロウィンの本場・アイルランドの伝統的なハロウィン料理。<br>その多くで使われているものは？</p>
+          <div class="quiz__choices" role="group" aria-label="Q2の選択肢">
+            <button type="button" class="quiz__choice">しょうゆ</button>
+            <button type="button" class="quiz__choice">わさび</button>
+            <button type="button" class="quiz__choice" data-correct>スパイス</button>
+          </div>
+          <p class="quiz__result" data-quiz-result aria-live="polite"></p>
+          <div class="quiz__answer" data-quiz-answer>
+            <p>ハロウィンの本場のアイルランドでは、たくさんの伝統的なハロウィン料理があります。<br>
+              その多くで、<strong class="kw">スパイス</strong>が使用されています！</p>
+          </div>
         </div>
       </article>
 
       <div class="keywords fade">
         <p class="keywords__label">キーワード</p>
         <p class="keywords__tags">
-          <span class="tag">フランス</span>
+          <span class="tag" data-tag="france" data-word="フランス">フランス</span>
           <span class="keywords__x">×</span>
-          <span class="tag">スパイス</span>
+          <span class="tag" data-tag="spice" data-word="スパイス">スパイス</span>
         </p>
         <p class="keywords__lead">この2つのキーワードから、<br class="br-sp">ブレンドが生まれました</p>
         <a href="#blend" class="btn btn--primary">ブレンドを見る
