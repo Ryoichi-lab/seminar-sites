@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>コーヒーセミナー｜アイスコーヒー編</title>
+  <meta name="description" content="TSUTAYA BOOKSTORE MARUNOUCHI店 コーヒーセミナー〜アイスコーヒー編〜">
+  <meta name="theme-color" content="#E9EEF3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ===== SVG アイコン・装飾 ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- 簡易世界地図（大陸の形はおおまかなイメージ） -->
+  <symbol id="map-base" viewBox="0 0 200 100">
+    <g fill="#CBD6E0">
+      <path d="M18 18 L58 11 L74 20 L64 33 L54 40 L46 47 L37 43 L26 31 Z"/>
+      <path d="M44 48 L53 50 L61 56 L67 63 L63 75 L57 86 L52 91 L50 78 L46 64 L41 55 Z"/>
+      <path d="M90 18 L108 13 L119 19 L111 28 L98 30 L91 26 Z"/>
+      <path d="M93 34 L110 32 L121 38 L125 48 L119 62 L113 74 L106 77 L102 64 L96 52 L89 44 Z"/>
+      <path d="M118 13 L160 9 L184 17 L179 30 L167 38 L153 42 L140 46 L130 40 L120 30 Z"/>
+      <path d="M141 46 L150 46 L152 54 L147 56 L143 50 Z"/>
+      <path d="M149 59 L160 61 L158 64 L148 63 Z"/>
+      <path d="M162 60 L172 61 L171 64 L161 63 Z"/>
+      <path d="M174 58 L183 60 L181 64 L173 62 Z"/>
+      <path d="M160 70 L178 68 L185 78 L175 85 L162 80 Z"/>
+    </g>
+  </symbol>
+
+  <symbol id="d-ice" viewBox="0 0 40 40">
+    <rect x="3" y="3" width="34" height="34" rx="8" fill="#fff" fill-opacity=".55" stroke="#fff" stroke-width="2"/>
+    <path d="M10 12l8-4M10 18l4-2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="d-drop" viewBox="0 0 20 28">
+    <path d="M10 1C6 9 2 13 2 18a8 8 0 0 0 16 0c0-5-4-9-8-17z" fill="#fff" fill-opacity=".75"/>
+    <ellipse cx="7" cy="18" rx="2" ry="3.5" fill="#fff"/>
+  </symbol>
+
+  <symbol id="i-bean" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="24" rx="13" ry="18" transform="rotate(30 24 24)" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M17 11c8 6 4 14 7 20s8 7 8 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-glass" viewBox="0 0 48 48">
+    <path d="M11 8h26l-3 32a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M13 18h22" stroke="currentColor" stroke-width="2"/>
+    <rect x="16" y="21" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-10 20 25)"/>
+    <rect x="25" y="27" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(12 28 30)"/>
+    <path d="M30 4l-3 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-mouth" viewBox="0 0 48 48">
+    <path d="M6 22c5-5 10-6 13-4 2 1 3 1 5 0 3-2 8-1 13 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 22c6 11 30 11 36 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M10 23c8 3 20 3 28 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-smile" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <circle cx="18" cy="20" r="2.2" fill="currentColor"/>
+    <circle cx="30" cy="20" r="2.2" fill="currentColor"/>
+    <path d="M16 28c4 5 12 5 16 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-nose" viewBox="0 0 48 48">
+    <path d="M10 30c4-8 10-14 18-16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 5"/>
+    <path d="M14 38c4-6 10-11 20-12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 5"/>
+    <path d="M30 8c3 4 3 8 0 12s-3 8 0 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M38 10c3 4 3 8 0 12s-3 8 0 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-food" viewBox="0 0 48 48">
+    <path d="M12 26h24l-3 15H15z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M20 26l1 15M28 26l-1 15" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 26a6 6 0 0 1 3-11 9 9 0 0 1 22 0 6 6 0 0 1 3 11z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-bulb" viewBox="0 0 48 48">
+    <path d="M17 31a12 12 0 1 1 14 0v4H17z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M18 40h12M21 44h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M24 2v3M8 9l2 2M40 9l-2 2M3 21h3M42 21h3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 48 48">
+    <circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M9 42a15 15 0 0 1 30 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-gift" viewBox="0 0 48 48">
+    <rect x="7" y="18" width="34" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M10 26v15h28V26M24 18v23" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M24 18c-4-8-12-8-11-3s11 3 11 3c0 0 10 2 11-3s-7-5-11 3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-question" viewBox="0 0 48 48">
+    <path d="M6 10h36v24H22l-9 8v-8H6z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M20 17a4 4 0 1 1 5 4c-1 .5-1 1.5-1 3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="24" cy="29" r="1.6" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-globe" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M6 24h36M24 6c-7 8-7 28 0 36M24 6c7 8 7 28 0 36" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="i-dripper" viewBox="0 0 48 48">
+    <path d="M8 10h32L28 28h-8z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M14 30h20l-2 12H16z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M24 28v6" stroke="currentColor" stroke-width="2.2" stroke-dasharray="2 2"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24">
+    <path d="M12 2.5l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.2l-5.9 3.2 1.3-6.5-4.9-4.6 6.6-.8z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<!-- ===== 固定進捗ナビ ===== -->
+<nav class="progress" aria-label="セクションの進捗" data-progress>
+  <div class="progress__bar"><span class="progress__fill" data-progress-fill></span></div>
+  <ol class="progress__list">
+    <li><a href="#sec-1" data-nav="sec-1"><span class="progress__num">Ⅰ</span><span class="progress__label">自己紹介</span></a></li>
+    <li><a href="#sec-2" data-nav="sec-2"><span class="progress__num">Ⅱ</span><span class="progress__label">ブレンド</span></a></li>
+    <li><a href="#sec-3" data-nav="sec-3"><span class="progress__num">Ⅲ</span><span class="progress__label">比較</span></a></li>
+    <li><a href="#sec-4" data-nav="sec-4"><span class="progress__num">Ⅳ</span><span class="progress__label">抽出体験</span></a></li>
+    <li><a href="#sec-5" data-nav="sec-5"><span class="progress__num">Ⅴ</span><span class="progress__label">まとめ</span></a></li>
+  </ol>
+</nav>
+
+<!-- ===== 0. ヒーロー ===== -->
+<header class="hero" id="top" data-hero-bg="images/hero.jpg">
+  <div class="hero__overlay"></div>
+  <p class="hero__ph-label" aria-hidden="true">images/hero.jpg</p>
+
+  <!-- 氷がカランと揺れるグラス -->
+  <svg class="hero__glass" viewBox="0 0 160 220" aria-hidden="true">
+    <defs>
+      <linearGradient id="g-coffee" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#6b4226" stop-opacity=".85"/>
+        <stop offset="1" stop-color="#3b2414" stop-opacity=".95"/>
+      </linearGradient>
+      <clipPath id="g-clip"><path d="M22 30h116l-12 172a10 10 0 0 1-10 9H44a10 10 0 0 1-10-9z"/></clipPath>
+    </defs>
+    <g clip-path="url(#g-clip)">
+      <rect x="0" y="78" width="160" height="150" fill="url(#g-coffee)"/>
+      <g class="ice ice--1"><use href="#d-ice" x="40" y="60" width="44" height="44"/></g>
+      <g class="ice ice--2"><use href="#d-ice" x="80" y="70" width="40" height="40"/></g>
+      <g class="ice ice--3"><use href="#d-ice" x="56" y="104" width="38" height="38"/></g>
+    </g>
+    <path d="M22 30h116l-12 172a10 10 0 0 1-10 9H44a10 10 0 0 1-10-9z" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-width="3"/>
+    <path d="M36 44l8 150" stroke="#fff" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+    <path d="M112 6l-14 120" stroke="#7FC8A9" stroke-width="7" stroke-linecap="round"/>
+    <!-- 結露の水滴 -->
+    <g class="drops">
+      <use class="drop drop--1" href="#d-drop" x="118" y="70" width="9" height="13"/>
+      <use class="drop drop--2" href="#d-drop" x="44" y="120" width="8" height="11"/>
+      <use class="drop drop--3" href="#d-drop" x="104" y="140" width="10" height="14"/>
+    </g>
+    <g fill="#fff" fill-opacity=".6">
+      <circle cx="60" cy="98" r="1.6"/><circle cx="100" cy="96" r="1.3"/><circle cx="120" cy="120" r="1.8"/>
+      <circle cx="50" cy="160" r="1.4"/><circle cx="92" cy="178" r="1.6"/><circle cx="114" cy="168" r="1.2"/>
+    </g>
+  </svg>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow">COFFEE SEMINAR</p>
+    <h1 class="hero__title">コーヒーセミナー</h1>
+    <p class="hero__sub"><span class="hero__sub-line"></span>アイスコーヒー編<span class="hero__sub-line"></span></p>
+    <a href="#agenda" class="btn btn--primary hero__btn">はじめる
+      <svg class="btn__icon btn__icon--down"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+  <p class="hero__store">STARBUCKS COFFEE<span>TSUTAYA BOOKSTORE MARUNOUCHI店</span></p>
+</header>
+
+<main>
+
+  <!-- ===== 1. アジェンダ ===== -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <div class="heading fade">
+        <p class="heading__en">AGENDA</p>
+        <h2 class="heading__ja">アジェンダ</h2>
+      </div>
+      <ol class="timeline">
+        <li class="fade"><a href="#sec-1" class="timeline__item"><span class="timeline__num">Ⅰ</span><span class="timeline__text">自己紹介，サポートツールの確認</span><svg class="timeline__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-2" class="timeline__item"><span class="timeline__num">Ⅱ</span><span class="timeline__text">アイスコーヒーブレンドについて</span><svg class="timeline__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-3" class="timeline__item"><span class="timeline__num">Ⅲ</span><span class="timeline__text">アイスコーヒー比較テイスティング</span><svg class="timeline__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-4" class="timeline__item"><span class="timeline__num">Ⅳ</span><span class="timeline__text">グラスドリップコーヒーメーカー抽出体験</span><svg class="timeline__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-5" class="timeline__item"><span class="timeline__num">Ⅴ</span><span class="timeline__text">記念品贈呈，まとめ，質問コーナー</span><svg class="timeline__arrow"><use href="#i-arrow"/></svg></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== 2. Ⅰ. 自己紹介 ===== -->
+  <section class="section chapter" id="sec-1" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅰ</span>
+        <h2 class="chapter__title">自己紹介・<br class="br-sp">コーヒーパスポートと<br class="br-sp">サポートツールの確認</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card card--empty fade">
+          <svg class="card__icon"><use href="#i-person"/></svg>
+          <!-- ここに自己紹介 -->
+        </article>
+        <article class="card card--empty fade">
+          <svg class="card__icon"><use href="#i-bean"/></svg>
+          <!-- ここにコーヒーパスポート・サポートツールの説明 -->
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. Ⅱ. アイスコーヒーブレンドについて ===== -->
+  <section class="section chapter chapter--tint" id="sec-2" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅱ</span>
+        <h2 class="chapter__title">アイスコーヒーブレンド<br class="br-sp">について</h2>
+      </div>
+
+      <article class="card blend-card is-iced fade">
+        <div class="ph blend-card__img"><img src="images/iced-coffee-blend.jpg" alt="アイスコーヒーブレンド"></div>
+        <div class="blend-card__body">
+          <h3 class="blend-card__name">アイスコーヒーブレンド</h3>
+          <ul class="list">
+            <li>毎年夏に発売されるアイスコーヒーにぴったりな夏の定番ブレンド</li>
+            <li>後味がさっぱりとしていてさわやかさを感じられる</li>
+          </ul>
+          <div class="pair-chips">
+            <ul class="chips-static"><li>キャラメル</li><li>ピーナッツ</li></ul>
+            <span>と相性抜群</span>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="subheading fade">アイスコーヒーに<br class="br-sp">向いているコーヒー</h3>
+      <p class="lead fade">コーヒー豆は大きく分けて3つの生産地で栽培されています。</p>
+
+      <div class="regions" data-regions>
+        <article class="region is-latam is-pick fade">
+          <svg class="region__map" viewBox="0 0 200 100" aria-hidden="true">
+            <use href="#map-base"/>
+            <path class="region__hl" d="M44 48 L53 50 L61 56 L67 63 L63 75 L57 86 L52 91 L50 78 L46 64 L41 55 Z"/>
+          </svg>
+          <h4 class="region__name">ラテンアメリカ</h4>
+          <p class="region__text">ナッツやココアの風味、さっぱりとした酸味が感じられる</p>
+          <p class="region__ex">例：コロンビア</p>
+        </article>
+        <article class="region is-asia fade">
+          <svg class="region__map" viewBox="0 0 200 100" aria-hidden="true">
+            <use href="#map-base"/>
+            <g class="region__hl">
+              <path d="M141 46 L150 46 L152 54 L147 56 L143 50 Z"/>
+              <path d="M149 59 L160 61 L158 64 L148 63 Z"/>
+              <path d="M162 60 L172 61 L171 64 L161 63 Z"/>
+              <path d="M174 58 L183 60 L181 64 L173 62 Z"/>
+            </g>
+          </svg>
+          <h4 class="region__name">アジア・太平洋</h4>
+          <p class="region__text">大地を思わせる、しっかりとしたコクで力強い風味</p>
+          <p class="region__ex">例：スマトラ</p>
+        </article>
+        <article class="region is-africa is-pick fade">
+          <svg class="region__map" viewBox="0 0 200 100" aria-hidden="true">
+            <use href="#map-base"/>
+            <path class="region__hl" d="M93 34 L110 32 L121 38 L125 48 L119 62 L113 74 L106 77 L102 64 L96 52 L89 44 Z"/>
+          </svg>
+          <h4 class="region__name">アフリカ</h4>
+          <p class="region__text">個性的で、シトラスやベリーなどジューシーな味わい</p>
+          <p class="region__ex">例：エチオピア</p>
+        </article>
+      </div>
+      <p class="swipe-hint" aria-hidden="true">← スワイプで切り替え →</p>
+
+      <aside class="conclusion fade">
+        <svg class="conclusion__icon"><use href="#i-globe"/></svg>
+        <p>アイスコーヒーで『すっきり・さわやか』な味わいを体験していただくため、スターバックスでは<strong><span class="hl-latam">ラテンアメリカ</span>・<span class="hl-africa">アフリカ</span>産</strong>を主に使用しています。</p>
+      </aside>
+
+      <article class="card blend-card is-italian fade">
+        <div class="ph blend-card__img"><img src="images/italian-roast.jpg" alt="イタリアンロースト"></div>
+        <div class="blend-card__body">
+          <h3 class="blend-card__name">イタリアンロースト</h3>
+          <ul class="list">
+            <li>ミルクやシロップをいれて楽しみたい方におすすめのコーヒー</li>
+            <li>スターバックスで一番深煎りのダークロースト</li>
+          </ul>
+          <div class="roast" data-roast>
+            <p class="roast__label">深煎り度</p>
+            <div class="roast__bar"><span class="roast__fill"></span><span class="roast__pin">一番深煎り</span></div>
+            <div class="roast__ends"><span>浅煎り</span><span>深煎り</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 4. Ⅲ. アイスコーヒー比較テイスティング ===== -->
+  <section class="section chapter" id="sec-3" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅲ</span>
+        <h2 class="chapter__title">アイスコーヒー<br class="br-sp">比較テイスティング</h2>
+      </div>
+
+      <article class="card blend-card is-kati fade">
+        <div class="ph blend-card__img"><img src="images/kati-kati-blend.jpg" alt="カティカティブレンド"></div>
+        <div class="blend-card__body">
+          <h3 class="blend-card__name">カティカティブレンド</h3>
+          <ul class="list">
+            <li>東アフリカ産のコーヒー</li>
+            <li>フローラルな香りでベリーやピンクグレープフルーツを思わせる風味</li>
+            <li>甘みをともなう華やかな味わい</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- COFFEEクイズ（正解・解説は js/main.js の CORRECT_ANSWER / EXPLANATION で設定） -->
+      <article class="card quiz fade" data-quiz>
+        <p class="quiz__badge">COFFEE QUIZ</p>
+        <p class="quiz__q">「カティカティ」とはどういう意味でしょう？</p>
+        <div class="quiz__choices">
+          <button type="button" class="quiz__choice" data-choice="1"><span>1</span>氷</button>
+          <button type="button" class="quiz__choice" data-choice="2"><span>2</span>間</button>
+          <button type="button" class="quiz__choice" data-choice="3"><span>3</span>常夏</button>
+        </div>
+        <p class="quiz__result" data-quiz-result aria-live="polite"></p>
+        <p class="quiz__exp" data-quiz-exp hidden></p>
+      </article>
+
+      <h3 class="subheading fade">コーヒーテイスティングのステップ</h3>
+      <div class="stepper fade" data-stepper>
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step"><svg class="step__icon"><use href="#i-bean"/></svg><p class="step__no">STEP 1</p><h4 class="step__title">香りをかぐ</h4><p class="step__text">まずは香りを楽しみます</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-glass"/></svg><p class="step__no">STEP 2</p><h4 class="step__title">すする</h4><p class="step__text">音を立てて一気にすすります</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-mouth"/></svg><p class="step__no">STEP 3</p><h4 class="step__title">口の中に広げる</h4><p class="step__text">口の中でコーヒーの酸味やコクを感じます</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-smile"/></svg><p class="step__no">STEP 4</p><h4 class="step__title">自分の言葉で表現する</h4><p class="step__text">酸味、コク、風味など自由に表現します</p></article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <!-- ===== 比較（ビジュアル） ===== -->
+      <h3 class="subheading fade">アイスコーヒーブレンドと<br class="br-sp">カティカティブレンドの比較</h3>
+      <div class="compare">
+        <article class="cmp is-iced fade">
+          <h4 class="cmp__name"><span class="blend-dot"></span>アイスコーヒーブレンド</h4>
+          <div class="cmp__row"><p class="cmp__label">酸味</p>
+            <div class="scale" data-level="1"><span class="scale__seg">LOW</span><span class="scale__seg">MEDIUM</span><span class="scale__seg">HIGH</span></div></div>
+          <div class="cmp__row"><p class="cmp__label">コク</p>
+            <div class="scale" data-level="1"><span class="scale__seg">LOW</span><span class="scale__seg">MEDIUM</span><span class="scale__seg">HIGH</span></div></div>
+          <div class="cmp__row"><p class="cmp__label">生産地</p>
+            <ul class="origins"><li class="region-chip is-latam">ラテンアメリカ</li></ul></div>
+        </article>
+        <article class="cmp is-kati fade">
+          <h4 class="cmp__name"><span class="blend-dot"></span>カティカティブレンド</h4>
+          <div class="cmp__row"><p class="cmp__label">酸味</p>
+            <div class="scale" data-level="2"><span class="scale__seg">LOW</span><span class="scale__seg">MEDIUM</span><span class="scale__seg">HIGH</span></div></div>
+          <div class="cmp__row"><p class="cmp__label">コク</p>
+            <div class="scale" data-level="1"><span class="scale__seg">LOW</span><span class="scale__seg">MEDIUM</span><span class="scale__seg">HIGH</span></div></div>
+          <div class="cmp__row"><p class="cmp__label">生産地</p>
+            <ul class="origins"><li class="region-chip is-africa">アフリカ</li></ul></div>
+        </article>
+      </div>
+
+      <aside class="point fade">
+        <svg class="point__icon"><use href="#i-bulb"/></svg>
+        <p class="point__text">酸味・生産地の違いに注目してみましょう！</p>
+      </aside>
+
+      <!-- ===== 比較テイスティングメモ ===== -->
+      <form class="card memo fade" data-memo onsubmit="return false">
+        <h3 class="memo__title">比較テイスティングメモ</h3>
+        <div class="memo__tabs" role="tablist" aria-label="メモを書くブレンド">
+          <button type="button" role="tab" class="memo-tab is-iced" aria-selected="true" data-memo-tab="iced"><span class="blend-dot"></span>アイスコーヒー<br>ブレンド</button>
+          <button type="button" role="tab" class="memo-tab is-kati" aria-selected="false" data-memo-tab="kati"><span class="blend-dot"></span>カティカティ<br>ブレンド</button>
+        </div>
+        <div class="memo__panel is-iced" data-memo-panel>
+          <div class="memo__row"><label for="m-acidity">酸味</label><input type="range" id="m-acidity" name="acidity" min="1" max="5" step="1" value="3"><output data-out="acidity">3</output></div>
+          <div class="memo__row"><label for="m-body">コク</label><input type="range" id="m-body" name="body" min="1" max="5" step="1" value="3"><output data-out="body">3</output></div>
+          <div class="memo__row"><label for="m-aroma">香り</label><input type="range" id="m-aroma" name="aroma" min="1" max="5" step="1" value="3"><output data-out="aroma">3</output></div>
+          <p class="memo__label">感じた言葉</p>
+          <div class="chips" role="group" aria-label="感じた言葉">
+            <button type="button" class="chip" aria-pressed="false">さっぱり</button>
+            <button type="button" class="chip" aria-pressed="false">さわやか</button>
+            <button type="button" class="chip" aria-pressed="false">フローラル</button>
+            <button type="button" class="chip" aria-pressed="false">ベリー</button>
+            <button type="button" class="chip" aria-pressed="false">グレープフルーツ</button>
+            <button type="button" class="chip" aria-pressed="false">キャラメル</button>
+            <button type="button" class="chip" aria-pressed="false">ナッツ</button>
+            <button type="button" class="chip" aria-pressed="false">甘い</button>
+          </div>
+          <label class="memo__label" for="m-free">自由入力</label>
+          <textarea id="m-free" name="free" rows="2"></textarea>
+        </div>
+
+        <p class="memo__label">好きだったのはどっち？</p>
+        <div class="fav" role="group" aria-label="好きだったのはどっち？">
+          <button type="button" class="fav__btn is-iced" aria-pressed="false" data-fav="iced"><span class="blend-dot"></span>アイスコーヒー<br>ブレンド</button>
+          <button type="button" class="fav__btn is-kati" aria-pressed="false" data-fav="kati"><span class="blend-dot"></span>カティカティ<br>ブレンド</button>
+        </div>
+
+        <button type="button" class="btn btn--primary memo__save" data-memo-save>比較カードをつくる</button>
+        <p class="memo__status" data-memo-status aria-live="polite"></p>
+      </form>
+
+      <div class="result" data-result hidden>
+        <p class="result__guide">スクリーンショットで保存できます</p>
+        <article class="result-card">
+          <svg class="result-card__ice result-card__ice--1" aria-hidden="true"><use href="#d-ice"/></svg>
+          <svg class="result-card__ice result-card__ice--2" aria-hidden="true"><use href="#d-ice"/></svg>
+          <p class="result-card__en">MY ICED COFFEE</p>
+          <h3 class="result-card__title">わたしのアイスコーヒー比較カード</h3>
+          <div class="result-card__rows" data-result-rows></div>
+          <p class="result-card__foot"><span data-result-date></span>STARBUCKS COFFEE<br>TSUTAYA BOOKSTORE MARUNOUCHI</p>
+        </article>
+      </div>
+
+      <!-- ===== フードペアリング ===== -->
+      <article class="card intro-card fade">
+        <svg class="intro-card__icon"><use href="#i-food"/></svg>
+        <h3 class="card__title">フードペアリング</h3>
+        <p class="intro-card__lead">コーヒーとフードの素敵な関係。</p>
+        <ul class="list">
+          <li>フードと相性がよいコーヒーを選ぶことで、おいしさを引き立て合う。</li>
+          <li>HPや店頭でフードに合うコーヒーを簡単に知ることができます！</li>
+        </ul>
+      </article>
+
+      <div class="try fade">
+        <p class="try__title">Let's try!!</p>
+        <div class="try__pair">
+          <figure class="try__item">
+            <div class="ph try__img is-iced"><img src="images/iced-coffee-blend.jpg" alt="アイスコーヒーブレンド"></div>
+            <figcaption>アイスコーヒーブレンド</figcaption>
+          </figure>
+          <span class="try__x" aria-label="と">×</span>
+          <figure class="try__item">
+            <div class="ph try__img"><img src="images/pairing-food.jpg" alt="ペアリングするフード"></div>
+            <figcaption><span class="todo"><!-- フード名 -->フード名</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h3 class="subheading fade">フードペアリングのステップ</h3>
+      <div class="stepper fade" data-stepper>
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step"><svg class="step__icon"><use href="#i-nose"/></svg><p class="step__no">STEP 1</p><h4 class="step__title">香りを楽しむ</h4><p class="step__text">コーヒーとフードの香りを楽しみます</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-glass"/></svg><p class="step__no">STEP 2</p><h4 class="step__title">コーヒーのみを味わう</h4><p class="step__text">テイスティング同様にすすり、口の中へ広げます</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-food"/></svg><p class="step__no">STEP 3</p><h4 class="step__title">フードのみを味わう</h4><p class="step__text">香りや食感に注目します</p></article>
+          <article class="step"><svg class="step__icon"><use href="#i-smile"/></svg><p class="step__no">STEP 4</p><h4 class="step__title">再度コーヒーを味わう</h4><p class="step__text">フードが口の中にあるうちにコーヒーを味わいます</p></article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. Ⅳ. グラスドリップコーヒーメーカー抽出体験 ===== -->
+  <section class="section chapter chapter--tint" id="sec-4" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅳ</span>
+        <h2 class="chapter__title">グラスドリップ<br class="br-sp">コーヒーメーカー抽出体験</h2>
+      </div>
+
+      <article class="card blend-card fade">
+        <div class="ph blend-card__img"><img src="images/glass-drip.jpg" alt="グラスドリップコーヒーメーカー"></div>
+        <div class="blend-card__body">
+          <h3 class="blend-card__name">グラスドリップ<wbr>コーヒーメーカー</h3>
+          <ul class="list">
+            <li>氷を入れてコーヒーを急冷する</li>
+            <li>香りと風味を閉じ込めたアイスコーヒーを抽出できる</li>
+            <li>アイスコーヒーだけでなく、ホットコーヒーも抽出可能</li>
+          </ul>
+        </div>
+      </article>
+
+      <h3 class="subheading fade">グラスドリップ<br class="br-sp">コーヒーメーカーの入れ方</h3>
+      <div class="stepper stepper--photo fade" data-stepper>
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step">
+            <div class="ph step__photo"><img src="images/glass-drip-1.jpg" alt="氷を入れる"></div>
+            <p class="step__no">STEP 1</p>
+            <h4 class="step__title">氷を入れる</h4>
+            <p class="step__text">★が目安量（1杯分：★／2杯分：★★／3杯分：★★★）</p>
+            <div class="cups" data-cups>
+              <p class="cups__q">何杯分？</p>
+              <div class="cups__btns" role="group" aria-label="何杯分？">
+                <button type="button" class="cups__btn" aria-pressed="true" data-cups-n="1">1杯</button>
+                <button type="button" class="cups__btn" aria-pressed="false" data-cups-n="2">2杯</button>
+                <button type="button" class="cups__btn" aria-pressed="false" data-cups-n="3">3杯</button>
+              </div>
+              <p class="cups__stars" aria-live="polite" data-cups-stars>
+                <svg class="cups__star is-on"><use href="#i-star"/></svg><svg class="cups__star"><use href="#i-star"/></svg><svg class="cups__star"><use href="#i-star"/></svg>
+              </p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/glass-drip-2.jpg" alt="フィルターをセット"></div>
+            <p class="step__no">STEP 2</p>
+            <h4 class="step__title">フィルターをセット</h4>
+            <p class="step__text">ドリッパーの真ん中のリングにセットする。</p>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/glass-drip-3.jpg" alt="蒸らす"></div>
+            <p class="step__no">STEP 3</p>
+            <h4 class="step__title">蒸らす</h4>
+            <p class="step__text">90〜96℃のお湯を注ぎ、20〜30秒蒸らす。</p>
+            <div class="timer" data-timer="30" data-timer-ok="20">
+              <div class="timer__ring">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="timer__bg" cx="60" cy="60" r="52"/>
+                  <circle class="timer__fg" cx="60" cy="60" r="52" data-timer-ring/>
+                </svg>
+                <p class="timer__num"><span data-timer-num>30</span><small>秒</small></p>
+              </div>
+              <div class="timer__side">
+                <button type="button" class="btn btn--primary timer__btn" data-timer-btn>30秒タイマー</button>
+                <p class="timer__msg" data-timer-msg aria-live="polite"></p>
+              </div>
+            </div>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/glass-drip-4.jpg" alt="抽出"></div>
+            <p class="step__no">STEP 4</p>
+            <h4 class="step__title">抽出</h4>
+            <p class="step__text">中央から円を描くように数回に分けて抽出。（目安の★まで注いだら終了）</p>
+          </article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <aside class="point fade">
+        <svg class="point__icon"><use href="#i-bulb"/></svg>
+        <p class="point__text">抽出後にグラスを回し、濃度を均一にすることがポイント</p>
+      </aside>
+
+      <h3 class="subheading fade">グラスドリップ<br class="br-sp">コーヒーメーカーの楽しみ方</h3>
+      <div class="enjoy fade" data-tabs>
+        <div class="enjoy__tabs" role="tablist" aria-label="楽しみ方">
+          <button type="button" role="tab" class="enjoy-tab" aria-selected="true" aria-controls="enjoy-1" id="tab-enjoy-1"><span>①</span><span class="enjoy-tab__t">オリジナル<wbr>ステンレス<wbr>コーヒーフィルター</span></button>
+          <button type="button" role="tab" class="enjoy-tab" aria-selected="false" aria-controls="enjoy-2" id="tab-enjoy-2"><span>②</span><span class="enjoy-tab__t">コールドブリュー<wbr>ストレーナー</span></button>
+        </div>
+        <div class="enjoy__panels">
+          <article class="enjoy__panel" role="tabpanel" id="enjoy-1" aria-labelledby="tab-enjoy-1">
+            <div class="ph enjoy__img"><img src="images/stainless-filter.jpg" alt="オリジナルステンレスコーヒーフィルター"></div>
+            <div class="enjoy__body">
+              <h4 class="enjoy__name">オリジナル<wbr>ステンレス<wbr>コーヒーフィルター</h4>
+              <ul class="list">
+                <li>金属製フィルターを用いることで風味をダイレクトに抽出。</li>
+                <li>円錐型の形状により、コーヒーの層を形成しバランスの良い味に。</li>
+                <li>お湯をホールドしやすいように、穴のサイズや間隔にこだわった。</li>
+              </ul>
+            </div>
+          </article>
+          <article class="enjoy__panel" role="tabpanel" id="enjoy-2" aria-labelledby="tab-enjoy-2" hidden>
+            <div class="ph enjoy__img"><img src="images/cold-brew-strainer.jpg" alt="コールドブリューストレーナー"></div>
+            <div class="enjoy__body">
+              <h4 class="enjoy__name">コールドブリューストレーナー</h4>
+              <ul class="list">
+                <li>水による抽出でなめらかな口あたりと自然な甘みを引き出す。</li>
+                <li>ご自宅の冷蔵庫で12時間抽出後、ミルクや水、氷でアレンジ。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. Ⅴ. 記念品贈呈・まとめ・質問コーナー ===== -->
+  <section class="section chapter" id="sec-5" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅴ</span>
+        <h2 class="chapter__title">記念品贈呈・まとめ・<br class="br-sp">質問コーナー</h2>
+      </div>
+
+      <article class="card card--empty fade">
+        <svg class="card__icon"><use href="#i-gift"/></svg>
+        <!-- ここに記念品贈呈の内容 -->
+      </article>
+
+      <h3 class="subheading fade">今日のおさらい</h3>
+      <div class="recap-blends fade">
+        <div class="mini is-iced"><p class="mini__name">アイスコーヒーブレンド</p><p class="mini__text">後味がさっぱりとしていてさわやかさを感じられる</p></div>
+        <div class="mini is-kati"><p class="mini__name">カティカティブレンド</p><p class="mini__text">甘みをともなう華やかな味わい</p></div>
+      </div>
+      <div class="recap">
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-globe"/></svg>
+          <h4 class="recap__title">アイスコーヒーに向いている生産地</h4>
+          <ul class="origins"><li class="region-chip is-latam">ラテンアメリカ</li><li class="region-chip is-africa">アフリカ</li></ul>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-dripper"/></svg>
+          <h4 class="recap__title">グラスドリップのポイント</h4>
+          <p class="recap__text">抽出後にグラスを回し、濃度を均一にすることがポイント</p>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-glass"/></svg>
+          <h4 class="recap__title">テイスティング 4ステップ</h4>
+          <ol class="recap__steps"><li>香りをかぐ</li><li>すする</li><li>口の中に広げる</li><li>自分の言葉で表現する</li></ol>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-food"/></svg>
+          <h4 class="recap__title">ペアリング 4ステップ</h4>
+          <ol class="recap__steps"><li>香りを楽しむ</li><li>コーヒーのみを味わう</li><li>フードのみを味わう</li><li>再度コーヒーを味わう</li></ol>
+        </article>
+      </div>
+
+      <article class="card qa fade">
+        <svg class="qa__icon"><use href="#i-question"/></svg>
+        <div>
+          <h3 class="card__title">質問コーナー</h3>
+          <!-- ここに質問コーナーの案内文 -->
+        </div>
+      </article>
+
+      <article class="card notice fade">
+        <p class="notice__label">お知らせ</p>
+        <!-- お知らせ
+        <div class="notice__item">
+          <p class="notice__date">YYYY.MM.DD</p>
+          <p class="notice__text">お知らせ本文</p>
+        </div>
+        -->
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__store">STARBUCKS COFFEE<span>TSUTAYA BOOKSTORE MARUNOUCHI</span></p>
+    <a href="#top" class="btn btn--light">ページトップへ戻る
+      <svg class="btn__icon btn__icon--up"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
