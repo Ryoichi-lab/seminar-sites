@@ -33,6 +33,18 @@
       probe.onerror = function () { box.classList.add('is-missing'); };
       probe.src = src;
     });
+
+    var hero = document.querySelector('[data-hero-bg]');
+    if (hero) {
+      var heroSrc = hero.getAttribute('data-hero-bg');
+      var bg = new Image();
+      bg.onload = function () {
+        // CSS変数経由だと url() が css/ 基準で解決されるため、直接指定する
+        hero.style.backgroundImage = 'url("' + heroSrc + '")';
+        hero.classList.add('has-image');
+      };
+      bg.src = heroSrc;
+    }
   }
 
   /* ---------- フェードイン ＋「どうして合うの？」の寄ってくる演出 ---------- */
