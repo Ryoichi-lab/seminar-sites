@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARUNOUCHI HALLOWEEN BLEND</title>
+  <meta name="description" content="バリスタが考えた、ハロウィン特別ブレンド｜TSUTAYA BOOKSTORE MARUNOUCHI">
+  <meta name="theme-color" content="#1E4620">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ===== SVG 素材 ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- 紅葉 -->
+  <symbol id="d-leaf" viewBox="0 0 64 64">
+    <path d="M32 4l5 13 9-6-2 12 13-2-8 10 11 6-13 4 4 10-12-5-2 12-5-10-5 10-2-12-12 5 4-10-13-4 11-6-8-10 13 2-2-12 9 6z" fill="currentColor"/>
+    <path d="M32 58V24M32 40l-10-8M32 36l10-9" stroke="rgba(0,0,0,.18)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <!-- 洋梨 -->
+  <symbol id="d-pear" viewBox="0 0 64 80">
+    <path d="M32 14c-6 0-9 6-9 13 0 6-11 12-11 28 0 13 9 21 20 21s20-8 20-21c0-16-11-22-11-28 0-7-3-13-9-13z" fill="currentColor"/>
+    <path d="M32 15c0-5 1-8 3-10" stroke="#5B3A1E" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M35 9c6-4 12-3 14 0-5 4-10 4-14 0z" fill="#4E7A3A"/>
+    <ellipse cx="24" cy="54" rx="4" ry="8" fill="rgba(255,255,255,.35)" transform="rotate(15 24 54)"/>
+  </symbol>
+  <!-- ツル -->
+  <symbol id="d-vine" viewBox="0 0 120 40">
+    <path d="M2 30c14-20 26 4 40-10s22-14 30 0 22 16 30-4c4-9 12-12 16-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 14c4-6 10-6 14-2-5 5-10 5-14 2zM26 26c-3-6-1-11 4-12 2 6 0 10-4 12z" fill="currentColor"/>
+  </symbol>
+  <!-- アイコン -->
+  <symbol id="i-bean" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="24" rx="13" ry="18" transform="rotate(30 24 24)" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M17 11c8 6 4 14 7 20s8 7 8 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-cup" viewBox="0 0 48 48">
+    <path d="M9 18h26v9a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 27z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M35 21h2.5a5 5 0 0 1 0 10H34" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M6 42h32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M17 6c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-mouth" viewBox="0 0 48 48">
+    <path d="M6 22c5-5 10-6 13-4 2 1 3 1 5 0 3-2 8-1 13 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 22c6 11 30 11 36 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 23c8 3 20 3 28 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-smile" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="3"/>
+    <circle cx="18" cy="20" r="2.4" fill="currentColor"/>
+    <circle cx="30" cy="20" r="2.4" fill="currentColor"/>
+    <path d="M16 28c4 5 12 5 16 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-pumpkin" viewBox="0 0 48 48">
+    <path d="M24 12c-3-5 0-8 3-9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="24" cy="28" rx="19" ry="15" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M24 13c-7 4-7 26 0 30M24 13c7 4 7 26 0 30" fill="none" stroke="currentColor" stroke-width="2.4"/>
+  </symbol>
+</svg>
+
+<!-- ===== 固定進捗ナビ ===== -->
+<nav class="steps-nav" aria-label="ページの流れ" data-progress>
+  <ol>
+    <li><a href="#story" data-nav="story"><span class="steps-nav__num">1</span><span class="steps-nav__label">ストーリー</span></a></li>
+    <li aria-hidden="true" class="steps-nav__line"></li>
+    <li><a href="#blend" data-nav="blend"><span class="steps-nav__num">2</span><span class="steps-nav__label">ブレンド</span></a></li>
+    <li aria-hidden="true" class="steps-nav__line"></li>
+    <li><a href="#tasting" data-nav="tasting"><span class="steps-nav__num">3</span><span class="steps-nav__label">テイスティング</span></a></li>
+  </ol>
+</nav>
+
+<!-- ===== 0. ヒーロー ===== -->
+<header class="hero" id="top">
+  <div class="hero__leaves" data-leaves aria-hidden="true"></div>
+  <svg class="deco deco--pear hero__pear" aria-hidden="true"><use href="#d-pear"/></svg>
+  <svg class="deco deco--vine hero__vine" aria-hidden="true"><use href="#d-vine"/></svg>
+
+  <div class="hero__inner">
+    <p class="ribbon"><span>スターバックスコーヒー<br>TSUTAYA BOOKSTORE MARUNOUCHI</span></p>
+    <h1 class="hero__title">
+      <span class="hero__title-1">MARUNOUCHI</span>
+      <span class="hero__title-2">HALLOWEEN<br>BLEND</span>
+    </h1>
+    <p class="hero__sub">バリスタが考えた、<br class="br-sp">ハロウィン特別ブレンド</p>
+    <a href="#story" class="btn btn--primary hero__btn">ストーリーを読む
+      <svg class="btn__icon btn__icon--down"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== ① ブレンドが生まれた背景 ===== -->
+  <section class="section" id="story" data-section>
+    <div class="container">
+      <div class="sec-head fade">
+        <p class="sec-head__en"><span>1</span>STORY</p>
+        <h2 class="sec-head__ja">ブレンドが生まれた背景</h2>
+      </div>
+
+      <article class="pumpkin pumpkin--orange fade">
+        <div class="pumpkin__body story-card">
+          <div class="ph ph--round story-card__img"><img src="images/jack-o-lantern.jpg" alt="ジャック・オー・ランタン"></div>
+          <h3 class="pumpkin__title">ハロウィンのはじまり</h3>
+          <p>ハロウィンのはじまりは、古代ヨーロッパにさかのぼります。<br>
+            ケルト族という民族の「サウィン」という祭礼が起源とされています。<br>
+            ケルト族は現在のアイルランド、イギリス、<strong class="kw">フランス</strong>周辺に住んでいました。</p>
+        </div>
+      </article>
+
+      <article class="pumpkin pumpkin--orange2 fade">
+        <div class="pumpkin__body story-card">
+          <h3 class="pumpkin__title">ハロウィンの料理</h3>
+          <p>ハロウィンの本場のアイルランドでは、たくさんの伝統的なハロウィン料理があります。<br>
+            その多くで、<strong class="kw">スパイス</strong>が使用されています！</p>
+        </div>
+      </article>
+
+      <div class="keywords fade">
+        <p class="keywords__label">キーワード</p>
+        <p class="keywords__tags">
+          <span class="tag">フランス</span>
+          <span class="keywords__x">×</span>
+          <span class="tag">スパイス</span>
+        </p>
+        <p class="keywords__lead">この2つのキーワードから、<br class="br-sp">ブレンドが生まれました</p>
+        <a href="#blend" class="btn btn--primary">ブレンドを見る
+          <svg class="btn__icon btn__icon--down"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ② 何がブレンドされているか ===== -->
+  <section class="section section--blend" id="blend" data-section>
+    <div class="container">
+      <div class="sec-head fade">
+        <p class="sec-head__en"><span>2</span>BLEND</p>
+        <h2 class="sec-head__ja">何がブレンドされているか</h2>
+      </div>
+
+      <div class="pumpkin pumpkin--sage fade">
+        <div class="pumpkin__body">
+          <p class="blend-text">ハロウィンにちなんだ「フランス」「スパイス」というキーワードをヒントにして、
+            バリスタが考えたハロウィン特別ブレンドをご用意しました。<br>
+            フランスをイメージした、スパイス薫る「フレンチ ロースト」と、
+            スパイスを残しつつマイルドに仕上げるために「パイク プレイス® ロースト」をブレンドしました。</p>
+
+          <div class="mix" data-mix>
+            <article class="mix__card mix__card--left">
+              <div class="ph mix__img"><img src="images/french-roast.jpg" alt="フレンチ ロースト"></div>
+              <h3 class="mix__name">フレンチ ロースト</h3>
+              <ul class="mix__role">
+                <li>「フランス」をイメージ</li>
+                <li>スパイス薫る味わい</li>
+              </ul>
+            </article>
+            <span class="mix__x" aria-label="と">×</span>
+            <article class="mix__card mix__card--right">
+              <div class="ph mix__img"><img src="images/pike-place.jpg" alt="パイク プレイス® ロースト"></div>
+              <h3 class="mix__name">パイク プレイス® ロースト</h3>
+              <ul class="mix__role">
+                <li>スパイスを残しつつ、全体をマイルドに</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="mix__result" data-mix-result><span class="mix__eq">＝</span>MARUNOUCHI<br>HALLOWEEN BLEND</p>
+          <!-- 配合比率 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ③ テイスティングのステップ ===== -->
+  <section class="section" id="tasting" data-section>
+    <div class="container">
+      <div class="sec-head fade">
+        <p class="sec-head__en"><span>3</span>TASTING</p>
+        <h2 class="sec-head__ja">テイスティングのステップ</h2>
+      </div>
+      <p class="lead fade">ブレンドの背景がわかったところで、<br class="br-sp">さっそく味わってみましょう！</p>
+
+      <div class="stepper fade" data-stepper>
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step">
+            <svg class="step__icon"><use href="#i-bean"/></svg>
+            <p class="step__no">STEP 1</p>
+            <h3 class="step__title">香りをかぐ</h3>
+            <p class="step__text">まずは香りを楽しみます</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-cup"/></svg>
+            <p class="step__no">STEP 2</p>
+            <h3 class="step__title">すする</h3>
+            <p class="step__text">音を立てて一気にすすります</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-mouth"/></svg>
+            <p class="step__no">STEP 3</p>
+            <h3 class="step__title">口の中に広げる</h3>
+            <p class="step__text">口の中でコーヒーの酸味やコクを感じます</p>
+            <p class="step__hint"><span>HINT</span>フレンチ ローストのスパイス感と、パイク プレイス® ローストのまろやかさ、どちらを強く感じますか？</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-smile"/></svg>
+            <p class="step__no">STEP 4</p>
+            <h3 class="step__title">自分の言葉で表現する</h3>
+            <p class="step__text">酸味、コク、風味など自由に表現します</p>
+            <a href="#memo" class="btn btn--orange step__memo-btn" data-open-memo>テイスティングメモを書く</a>
+          </article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <!-- テイスティングメモ（ステップ④の後に表示） -->
+      <form class="memo" id="memo" data-memo hidden onsubmit="return false">
+        <h3 class="memo__title">
+          <svg aria-hidden="true"><use href="#d-leaf"/></svg>テイスティングメモ
+        </h3>
+
+        <div class="memo__row">
+          <label for="m-acid">酸味</label>
+          <input type="range" id="m-acid" name="acidity" min="1" max="5" step="1" value="3">
+          <output for="m-acid" data-out="acidity">3</output>
+        </div>
+        <div class="memo__row">
+          <label for="m-body">コク</label>
+          <input type="range" id="m-body" name="body" min="1" max="5" step="1" value="3">
+          <output for="m-body" data-out="body">3</output>
+        </div>
+        <div class="memo__row">
+          <label for="m-spice">スパイス感</label>
+          <input type="range" id="m-spice" name="spice" min="1" max="5" step="1" value="3">
+          <output for="m-spice" data-out="spice">3</output>
+        </div>
+
+        <p class="memo__label">感じた言葉</p>
+        <div class="chips" role="group" aria-label="感じた言葉">
+          <button type="button" class="chip" aria-pressed="false">スパイシー</button>
+          <button type="button" class="chip" aria-pressed="false">香ばしい</button>
+          <button type="button" class="chip" aria-pressed="false">まろやか</button>
+          <button type="button" class="chip" aria-pressed="false">ナッツ</button>
+          <button type="button" class="chip" aria-pressed="false">チョコレート</button>
+        </div>
+        <label class="memo__label" for="m-free">自由入力</label>
+        <textarea id="m-free" name="free" rows="3"></textarea>
+
+        <button type="button" class="btn btn--primary memo__save" data-memo-save>メモを保存</button>
+        <p class="memo__status" data-memo-status aria-live="polite"></p>
+      </form>
+
+      <!-- 感想カード -->
+      <div class="result" data-result hidden>
+        <p class="result__guide">スクリーンショットで保存できます</p>
+        <article class="result-card" data-result-card>
+          <svg class="result-card__leaf result-card__leaf--1" aria-hidden="true"><use href="#d-leaf"/></svg>
+          <svg class="result-card__leaf result-card__leaf--2" aria-hidden="true"><use href="#d-leaf"/></svg>
+          <svg class="result-card__pear" aria-hidden="true"><use href="#d-pear"/></svg>
+          <p class="result-card__ribbon">あなたのハロウィンブレンドの感想</p>
+          <p class="result-card__blend">MARUNOUCHI<br>HALLOWEEN BLEND</p>
+          <dl class="result-card__scores" data-result-scores></dl>
+          <ul class="result-card__words" data-result-words></ul>
+          <p class="result-card__free" data-result-free></p>
+          <p class="result-card__foot"><span data-result-date></span>STARBUCKS COFFEE<br>TSUTAYA BOOKSTORE MARUNOUCHI</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== エンディング ===== -->
+  <section class="ending">
+    <div class="container">
+      <div class="pumpkin pumpkin--orange ending__card fade">
+        <div class="pumpkin__body">
+          <p class="ending__title">Happy Halloween!</p>
+          <p class="ending__text">気に入ったら店頭のバリスタに<br class="br-sp">声をかけてください</p>
+        </div>
+      </div>
+    </div>
+    <svg class="deco deco--leaf ending__leaf1" aria-hidden="true"><use href="#d-leaf"/></svg>
+    <svg class="deco deco--leaf ending__leaf2" aria-hidden="true"><use href="#d-leaf"/></svg>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <svg class="footer__vine" aria-hidden="true"><use href="#d-vine"/></svg>
+  <p class="footer__store">STARBUCKS COFFEE<span>TSUTAYA BOOKSTORE MARUNOUCHI</span></p>
+  <a href="#top" class="btn btn--cream">ページトップへ戻る
+    <svg class="btn__icon btn__icon--up"><use href="#i-arrow"/></svg>
+  </a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

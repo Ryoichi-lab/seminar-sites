@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>コーヒーセミナー｜コーヒーを始めよう編</title>
+  <meta name="description" content="TSUTAYA BOOKSTORE 丸の内 コーヒーセミナー〜コーヒーを始めよう編〜">
+  <meta name="theme-color" content="#2b211a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ===== SVG アイコン定義 ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-bean" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="24" rx="13" ry="18" transform="rotate(30 24 24)" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M17 11c8 6 4 14 7 20s8 7 8 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-cup" viewBox="0 0 48 48">
+    <path d="M9 18h26v9a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 27z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M35 21h2.5a5 5 0 0 1 0 10H34" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M6 42h32" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M17 6c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-mouth" viewBox="0 0 48 48">
+    <path d="M6 22c5-5 10-6 13-4 2 1 3 1 5 0 3-2 8-1 13 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 22c6 11 30 11 36 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M10 23c8 3 20 3 28 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-smile" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <circle cx="18" cy="20" r="2.2" fill="currentColor"/>
+    <circle cx="30" cy="20" r="2.2" fill="currentColor"/>
+    <path d="M16 28c4 5 12 5 16 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-muffin" viewBox="0 0 48 48">
+    <path d="M12 26h24l-3 15H15z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M20 26l1 15M28 26l-1 15" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 26a6 6 0 0 1 3-11 9 9 0 0 1 22 0 6 6 0 0 1 3 11z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-nose" viewBox="0 0 48 48">
+    <path d="M10 30c4-8 10-14 18-16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 5"/>
+    <path d="M14 38c4-6 10-11 20-12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 5"/>
+    <path d="M30 8c3 4 3 8 0 12s-3 8 0 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M38 10c3 4 3 8 0 12s-3 8 0 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-bulb" viewBox="0 0 48 48">
+    <path d="M17 31a12 12 0 1 1 14 0v4H17z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M18 40h12M21 44h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M24 2v3M8 9l2 2M40 9l-2 2M3 21h3M42 21h3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-dripper" viewBox="0 0 48 48">
+    <path d="M8 10h32L28 30h-8z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M14 10l8 20M34 10l-8 20M24 10v20" stroke="currentColor" stroke-width="1.8"/>
+    <path d="M13 36h22v4a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.6"/>
+  </symbol>
+  <symbol id="i-kettle" viewBox="0 0 48 48">
+    <path d="M12 20h20v16a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M32 26l10-12" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M17 20v-4h10v4M22 12v4" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M42 18v6M42 28v3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="2 3"/>
+  </symbol>
+  <symbol id="i-gift" viewBox="0 0 48 48">
+    <rect x="7" y="18" width="34" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M10 26v15h28V26M24 18v23" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M24 18c-4-8-12-8-11-3s11 3 11 3c0 0 10 2 11-3s-7-5-11 3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 48 48">
+    <circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2.6"/>
+    <path d="M9 42a15 15 0 0 1 30 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-question" viewBox="0 0 48 48">
+    <path d="M6 10h36v24H22l-9 8v-8H6z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M20 17a4 4 0 1 1 5 4c-1 .5-1 1.5-1 3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="24" cy="29" r="1.6" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<!-- ===== 固定進捗ナビ ===== -->
+<nav class="progress" aria-label="セクションの進捗" data-progress>
+  <div class="progress__bar"><span class="progress__fill" data-progress-fill></span></div>
+  <ol class="progress__list">
+    <li><a href="#sec-1" data-nav="sec-1"><span class="progress__num">Ⅰ</span><span class="progress__label">自己紹介</span></a></li>
+    <li><a href="#sec-2" data-nav="sec-2"><span class="progress__num">Ⅱ</span><span class="progress__label">テイスティング</span></a></li>
+    <li><a href="#sec-3" data-nav="sec-3"><span class="progress__num">Ⅲ</span><span class="progress__label">ペアリング</span></a></li>
+    <li><a href="#sec-4" data-nav="sec-4"><span class="progress__num">Ⅳ</span><span class="progress__label">ORIGAMI®</span></a></li>
+    <li><a href="#sec-5" data-nav="sec-5"><span class="progress__num">Ⅴ</span><span class="progress__label">まとめ</span></a></li>
+  </ol>
+</nav>
+
+<!-- ===== 0. ヒーロー ===== -->
+<header class="hero" id="top" data-hero-bg="images/hero.jpg">
+  <div class="hero__overlay"></div>
+  <p class="hero__ph-label" aria-hidden="true">images/hero.jpg</p>
+  <div class="hero__inner">
+    <p class="hero__eyebrow">COFFEE SEMINAR</p>
+    <h1 class="hero__title">コーヒーセミナー</h1>
+    <p class="hero__sub"><span class="hero__sub-line"></span>コーヒーを始めよう編<span class="hero__sub-line"></span></p>
+    <a href="#agenda" class="btn btn--light hero__btn">はじめる
+      <svg class="btn__icon btn__icon--down"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+  <p class="hero__store">STARBUCKS COFFEE<span>TSUTAYA BOOKSTORE MARUNOUCHI</span></p>
+</header>
+
+<main>
+
+  <!-- ===== 1. アジェンダ ===== -->
+  <section class="section section--agenda" id="agenda">
+    <div class="container">
+      <div class="heading fade">
+        <p class="heading__en">AGENDA</p>
+        <h2 class="heading__ja">アジェンダ</h2>
+      </div>
+      <ol class="agenda">
+        <li class="fade"><a href="#sec-1" class="agenda__item">
+          <span class="agenda__num">Ⅰ</span>
+          <span class="agenda__text">自己紹介、コーヒーパスポートとサポートツールの確認</span>
+          <svg class="agenda__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-2" class="agenda__item">
+          <span class="agenda__num">Ⅱ</span>
+          <span class="agenda__text">コーヒーテイスティング</span>
+          <svg class="agenda__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-3" class="agenda__item">
+          <span class="agenda__num">Ⅲ</span>
+          <span class="agenda__text">フードペアリング</span>
+          <svg class="agenda__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-4" class="agenda__item">
+          <span class="agenda__num">Ⅳ</span>
+          <span class="agenda__text">ORIGAMI® 抽出体験</span>
+          <svg class="agenda__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#sec-5" class="agenda__item">
+          <span class="agenda__num">Ⅴ</span>
+          <span class="agenda__text">記念品贈呈、まとめ、質問コーナー</span>
+          <svg class="agenda__arrow"><use href="#i-arrow"/></svg></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== 2. Ⅰ. 自己紹介 ===== -->
+  <section class="section chapter" id="sec-1" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅰ</span>
+        <h2 class="chapter__title">自己紹介、<br class="br-sp">コーヒーパスポートと<br class="br-sp">サポートツールの確認</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="card card--empty fade">
+          <svg class="card__icon"><use href="#i-person"/></svg>
+          <!-- ここに自己紹介 -->
+        </article>
+        <article class="card card--empty fade">
+          <svg class="card__icon"><use href="#i-bean"/></svg>
+          <!-- ここにコーヒーパスポート・サポートツールの説明 -->
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. Ⅱ. コーヒーテイスティング ===== -->
+  <section class="section chapter" id="sec-2" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅱ</span>
+        <h2 class="chapter__title">コーヒーテイスティング</h2>
+      </div>
+
+      <div class="grid-2">
+        <article class="card media-card fade">
+          <figure class="ph media-card__img"><img src="images/tokyo-roast.jpg" alt="TOKYO ロースト"></figure>
+          <div class="media-card__body">
+            <p class="label">本日のコーヒー</p>
+            <h3 class="card__title">TOKYO ロースト</h3>
+            <ul class="list">
+              <li>中目黒にあるスターバックス リザーブ ロースタリーで焙煎</li>
+              <li>まろやかで心温まる味わいが特徴</li>
+              <li>シナモンやチョコレートと相性抜群</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card media-card fade">
+          <figure class="ph media-card__img"><img src="images/press.jpg" alt="コーヒープレス"></figure>
+          <div class="media-card__body">
+            <p class="label">抽出方法</p>
+            <h3 class="card__title">コーヒープレス</h3>
+            <ul class="list">
+              <li>コーヒーの油分をダイレクトに抽出していて、香りが豊か</li>
+              <li>自宅でも簡単に抽出可能</li>
+              <li>店舗でもプレスサービスとして販売（すべての豆が対象）</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subheading fade">テイスティングのステップ</h3>
+      <div class="stepper fade" data-stepper aria-roledescription="ステップ表示">
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step">
+            <svg class="step__icon"><use href="#i-nose"/></svg>
+            <p class="step__no">STEP 1</p>
+            <h4 class="step__title">香りをかぐ</h4>
+            <p class="step__text">まずは香りを楽しみます</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-cup"/></svg>
+            <p class="step__no">STEP 2</p>
+            <h4 class="step__title">すする</h4>
+            <p class="step__text">音を立てて一気にすすります</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-mouth"/></svg>
+            <p class="step__no">STEP 3</p>
+            <h4 class="step__title">口の中に広げる</h4>
+            <p class="step__text">口の中でコーヒーの酸味やコクを感じます</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-smile"/></svg>
+            <p class="step__no">STEP 4</p>
+            <h4 class="step__title">自分の言葉で表現する</h4>
+            <p class="step__text">酸味、コク、風味など自由に表現します</p>
+          </article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <!-- テイスティングメモ -->
+      <form class="card memo fade" data-memo="seminar-tasting-memo" onsubmit="return false">
+        <h3 class="card__title memo__title">テイスティングメモ</h3>
+        <div class="memo__row">
+          <label for="m-acid">酸味</label>
+          <input type="range" id="m-acid" name="acidity" min="1" max="5" step="1" value="3">
+          <output for="m-acid" data-out="acidity">3</output>
+        </div>
+        <div class="memo__row">
+          <label for="m-body">コク</label>
+          <input type="range" id="m-body" name="body" min="1" max="5" step="1" value="3">
+          <output for="m-body" data-out="body">3</output>
+        </div>
+        <div class="memo__row">
+          <label for="m-aroma">香り</label>
+          <input type="range" id="m-aroma" name="aroma" min="1" max="5" step="1" value="3">
+          <output for="m-aroma" data-out="aroma">3</output>
+        </div>
+        <label class="memo__label" for="m-words">感じた言葉</label>
+        <textarea id="m-words" name="words" rows="3"></textarea>
+        <p class="memo__status" data-memo-status aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== 4. Ⅲ. フードペアリング ===== -->
+  <section class="section chapter chapter--tint" id="sec-3" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅲ</span>
+        <h2 class="chapter__title">フードペアリング</h2>
+      </div>
+
+      <article class="card intro-card fade">
+        <svg class="intro-card__icon"><use href="#i-muffin"/></svg>
+        <h3 class="card__title">フードペアリングとは</h3>
+        <p class="intro-card__lead">コーヒーとフードの素敵な関係</p>
+        <ul class="list">
+          <li>フードと相性がよいコーヒーを選ぶことで、おいしさを引き立て合う</li>
+          <li>HPや店頭でフードに合うコーヒーを簡単に知ることができます！</li>
+        </ul>
+      </article>
+
+      <h3 class="subheading fade">相性の良いフレーバー例</h3>
+      <div class="grid-2">
+        <article class="card flavor-card fade">
+          <h4 class="flavor-card__name">パイク プレイス® ロースト</h4>
+          <ul class="chips">
+            <li>ナッツ</li><li>チョコレート</li><li>シナモン</li>
+          </ul>
+        </article>
+        <article class="card flavor-card fade">
+          <h4 class="flavor-card__name">スマトラ</h4>
+          <ul class="chips">
+            <li>シナモン</li><li>オートミール</li><li>メープル</li><li>バター</li><li>トフィー</li><li>チーズ</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="subheading fade">ペアリングのステップ</h3>
+      <div class="stepper fade" data-stepper aria-roledescription="ステップ表示">
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step">
+            <svg class="step__icon"><use href="#i-nose"/></svg>
+            <p class="step__no">STEP 1</p>
+            <h4 class="step__title">香りを楽しむ</h4>
+            <p class="step__text">コーヒーとフードの香りを楽しみます</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-cup"/></svg>
+            <p class="step__no">STEP 2</p>
+            <h4 class="step__title">コーヒーのみを味わう</h4>
+            <p class="step__text">テイスティング同様にすすり、口の中へ広げます</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-muffin"/></svg>
+            <p class="step__no">STEP 3</p>
+            <h4 class="step__title">フードのみを味わう</h4>
+            <p class="step__text">香りや食感に注目します</p>
+          </article>
+          <article class="step">
+            <svg class="step__icon"><use href="#i-smile"/></svg>
+            <p class="step__no">STEP 4</p>
+            <h4 class="step__title">再度コーヒーを味わう</h4>
+            <p class="step__text">フードが口の中にあるうちにコーヒーを味わいます</p>
+          </article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <div class="try fade">
+        <p class="try__title">Let's try!!</p>
+        <div class="try__pair">
+          <figure class="try__item">
+            <div class="ph try__img"><img src="images/press.jpg" alt="コーヒープレス"></div>
+            <figcaption>コーヒープレス</figcaption>
+          </figure>
+          <span class="try__x" aria-label="と">×</span>
+          <figure class="try__item">
+            <div class="ph try__img"><img src="images/cinnamon-roll.jpg" alt="シナモンロール"></div>
+            <figcaption>シナモンロール</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. Ⅳ. ORIGAMI® 抽出体験 ===== -->
+  <section class="section chapter" id="sec-4" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅳ</span>
+        <h2 class="chapter__title">ORIGAMI® 抽出体験</h2>
+      </div>
+
+      <article class="card intro-card fade">
+        <svg class="intro-card__icon"><use href="#i-dripper"/></svg>
+        <h3 class="card__title">スターバックス <br class="br-sp">ORIGAMI® とは</h3>
+        <ul class="list">
+          <li>香り豊かなコーヒーを特別な器具なしでいれられるコーヒー</li>
+          <li>名前の由来は、コーヒーの粉を一杯ずつ丁寧に包む所作が、日本の伝統文化「折り紙」と重なることから</li>
+        </ul>
+      </article>
+
+      <h3 class="subheading fade">いれ方</h3>
+      <div class="stepper stepper--photo fade" data-stepper aria-roledescription="ステップ表示">
+        <div class="stepper__status">
+          <p class="stepper__count"><span class="stepper__now" data-step-now>1</span><span class="stepper__total">/ 4</span></p>
+          <div class="stepper__dots" data-step-dots></div>
+        </div>
+        <div class="stepper__track" data-step-track tabindex="0" aria-label="横スワイプでステップを移動">
+          <article class="step">
+            <div class="ph step__photo"><img src="images/origami-1.jpg" alt="ドリッパーを開封する"></div>
+            <p class="step__no">STEP 1</p>
+            <h4 class="step__title">ドリッパーを開封する</h4>
+            <p class="step__text">開封時の香りも楽しみます！</p>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/origami-2.jpg" alt="カップに固定する"></div>
+            <p class="step__no">STEP 2</p>
+            <h4 class="step__title">カップに固定する</h4>
+            <p class="step__text">カップの中央に足部分をセットします</p>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/origami-3.jpg" alt="一回目の注湯"></div>
+            <p class="step__no">STEP 3</p>
+            <h4 class="step__title">一回目の注湯</h4>
+            <p class="step__text">20〜30秒蒸らします（お湯は細めにゆっくりと）</p>
+            <!-- 蒸らしタイマー -->
+            <div class="timer" data-timer="30">
+              <div class="timer__ring">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="timer__bg" cx="60" cy="60" r="52"/>
+                  <circle class="timer__fg" cx="60" cy="60" r="52" data-timer-ring/>
+                </svg>
+                <p class="timer__num"><span data-timer-num>30</span><small>秒</small></p>
+              </div>
+              <button type="button" class="btn btn--green timer__btn" data-timer-btn>30秒タイマー</button>
+            </div>
+          </article>
+          <article class="step">
+            <div class="ph step__photo"><img src="images/origami-4.jpg" alt="2回目の注湯"></div>
+            <p class="step__no">STEP 4</p>
+            <h4 class="step__title">2回目の注湯</h4>
+            <p class="step__text">水位7割で一度止め、下がったら再度注ぎます（出来上がり約140ml）</p>
+          </article>
+        </div>
+        <div class="stepper__nav">
+          <button type="button" class="btn btn--ghost" data-step-prev>戻る</button>
+          <button type="button" class="btn btn--primary" data-step-next>次へ</button>
+        </div>
+      </div>
+
+      <aside class="point fade">
+        <svg class="point__icon"><use href="#i-bulb"/></svg>
+        <div>
+          <p class="point__label">POINT</p>
+          <p class="point__text">細めのお湯をコーヒーの粉の中心に丁寧に注ぐことがポイント</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== 6. Ⅴ. 記念品贈呈・まとめ・質問コーナー ===== -->
+  <section class="section chapter chapter--tint" id="sec-5" data-section>
+    <div class="container">
+      <div class="chapter__head fade">
+        <span class="chapter__num">Ⅴ</span>
+        <h2 class="chapter__title">記念品贈呈、<br class="br-sp">まとめ、質問コーナー</h2>
+      </div>
+
+      <article class="card card--empty fade">
+        <svg class="card__icon"><use href="#i-gift"/></svg>
+        <!-- ここに記念品贈呈の内容 -->
+      </article>
+
+      <h3 class="subheading fade">今日のおさらい</h3>
+      <div class="recap">
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-bean"/></svg>
+          <h4 class="recap__title">TOKYO ロースト</h4>
+          <p class="recap__text">まろやかで心温まる味わいが特徴<br>シナモンやチョコレートと相性抜群</p>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-cup"/></svg>
+          <h4 class="recap__title">テイスティング 4ステップ</h4>
+          <ol class="recap__steps">
+            <li>香りをかぐ</li><li>すする</li><li>口の中に広げる</li><li>自分の言葉で表現する</li>
+          </ol>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-muffin"/></svg>
+          <h4 class="recap__title">ペアリング 4ステップ</h4>
+          <ol class="recap__steps">
+            <li>香りを楽しむ</li><li>コーヒーのみを味わう</li><li>フードのみを味わう</li><li>再度コーヒーを味わう</li>
+          </ol>
+        </article>
+        <article class="card recap__card fade">
+          <svg class="recap__icon"><use href="#i-bulb"/></svg>
+          <h4 class="recap__title">ORIGAMI® のポイント</h4>
+          <p class="recap__text">細めのお湯をコーヒーの粉の中心に丁寧に注ぐことがポイント</p>
+        </article>
+      </div>
+
+      <article class="card qa fade">
+        <svg class="qa__icon"><use href="#i-question"/></svg>
+        <div>
+          <h3 class="card__title">質問コーナー</h3>
+          <!-- ここに質問コーナーの案内文 -->
+        </div>
+      </article>
+
+      <article class="card notice fade">
+        <p class="notice__label">お知らせ</p>
+        <!-- ここに店舗イベント・季節のおすすめを追記
+        <div class="notice__item">
+          <p class="notice__date">YYYY.MM.DD</p>
+          <p class="notice__text">お知らせ本文</p>
+        </div>
+        -->
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== フッター ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__store">STARBUCKS COFFEE<span>TSUTAYA BOOKSTORE MARUNOUCHI</span></p>
+    <a href="#top" class="btn btn--light footer__top">ページトップへ戻る
+      <svg class="btn__icon btn__icon--up"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
