@@ -1,6 +1,6 @@
 /* =========================================================
    コーヒーセミナー クイック編
-   クリスマス ブレンド × クランベリー ブリス バー（30分）
+   クリスマス ブレンド × クランベリー ブリスバー（30分）
    ========================================================= */
 
 :root {
@@ -280,7 +280,7 @@ button { font: inherit; }
 html:not(.js) .acc { grid-template-rows: 1fr; }
 @media (prefers-reduced-motion: reduce) { .acc { transition: none; } }
 
-/* ---------- ブリス バーの断面図 ---------- */
+/* ---------- ブリスバーの断面図 ---------- */
 .layers { margin-top: 18px; }
 .layers__svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; }
 .layers__legend { display: grid; gap: 10px; margin-top: 14px; }
