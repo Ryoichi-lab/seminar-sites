@@ -322,6 +322,10 @@ button { font: inherit; }
   border: 2px dashed var(--line);
 }
 
+/* 章Ⅰのイラストカード */
+.illus-card { padding: 0; overflow: hidden; background: var(--surface); }
+.illus-card__svg { display: block; width: 100%; height: auto; }
+
 .grid-2 { display: grid; gap: 20px; }
 @media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 24px; } }
 
