@@ -95,12 +95,12 @@ button { font: inherit; }
 .progress.is-shown { transform: none; }
 .progress__bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--line); }
 .progress__fill { display: block; height: 100%; width: 0; background: var(--berry); }
-.progress__list { display: grid; grid-template-columns: repeat(5, 1fr); height: 100%; max-width: 900px; margin: 0 auto; padding: 0 6px; }
+.progress__list { display: grid; grid-template-columns: repeat(4, 1fr); height: 100%; max-width: 900px; margin: 0 auto; padding: 0 6px; }
 .progress__list a { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-decoration: none; color: var(--ink-soft); line-height: 1.25; border-bottom: 3px solid transparent; }
 .progress__time { font-family: var(--font-min); font-weight: 700; font-size: 13px; }
 .progress__label { font-size: 9.5px; letter-spacing: 0; white-space: nowrap; }
 .progress__list a.is-active { color: var(--berry); }
-.progress__list a.is-active .progress__time { color: #fff; background: var(--berry); padding: 0 7px; border-radius: 999px; }
+.progress__list a.is-active .progress__time { display: inline-grid; place-items: center; width: 22px; height: 22px; color: #fff; background: var(--berry); border-radius: 50%; }
 .progress__list a.is-done { color: var(--ink); }
 @media (min-width: 600px) { .progress__label { font-size: 11px; } }
 
@@ -207,21 +207,22 @@ button { font: inherit; }
 
 /* ---------- 30分の流れ ---------- */
 .flow { position: relative; max-width: 600px; margin: 0 auto; }
-.flow::before { content: ""; position: absolute; left: 42px; top: 24px; bottom: 24px; width: 2px; background: var(--line); }
+.flow::before { content: ""; position: absolute; left: 27px; top: 24px; bottom: 24px; width: 2px; background: var(--line); }
 .flow li + li { margin-top: 10px; }
 .flow__item {
   position: relative;
-  display: grid; grid-template-columns: 86px 1fr 16px; align-items: center; gap: 10px;
+  display: grid; grid-template-columns: 56px 1fr 16px; align-items: center; gap: 10px;
   padding: 12px 14px 12px 0;
   text-decoration: none;
 }
 .flow__time {
   position: relative; z-index: 1;
   justify-self: center;
-  padding: 4px 10px;
-  border-radius: 999px;
+  display: grid; place-items: center;
+  width: 40px; height: 40px;
+  border-radius: 50%;
   background: var(--brown); color: var(--cream);
-  font-family: var(--font-min); font-weight: 700; font-size: 13.5px; white-space: nowrap;
+  font-family: var(--font-min); font-weight: 800; font-size: 17px; white-space: nowrap;
 }
 .flow__text {
   padding: 12px 16px;

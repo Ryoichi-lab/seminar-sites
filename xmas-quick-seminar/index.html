@@ -51,11 +51,10 @@
 <nav class="progress" aria-label="30分の流れ" data-progress>
   <div class="progress__bar"><span class="progress__fill" data-progress-fill></span></div>
   <ol class="progress__list">
-    <li><a href="#greet" data-nav="greet"><span class="progress__time">0分</span><span class="progress__label">ごあいさつ</span></a></li>
-    <li><a href="#blend" data-nav="blend"><span class="progress__time">3分</span><span class="progress__label">ブレンド</span></a></li>
-    <li><a href="#bliss" data-nav="bliss"><span class="progress__time">10分</span><span class="progress__label">ブリス バー</span></a></li>
-    <li><a href="#pairing" data-nav="pairing"><span class="progress__time">15分</span><span class="progress__label">ペアリング</span></a></li>
-    <li><a href="#custom" data-nav="custom"><span class="progress__time">25分</span><span class="progress__label">まとめ</span></a></li>
+    <li><a href="#blend" data-nav="blend"><span class="progress__time">1</span><span class="progress__label">ブレンド</span></a></li>
+    <li><a href="#bliss" data-nav="bliss"><span class="progress__time">2</span><span class="progress__label">ブリス バー</span></a></li>
+    <li><a href="#pairing" data-nav="pairing"><span class="progress__time">3</span><span class="progress__label">ペアリング</span></a></li>
+    <li><a href="#custom" data-nav="custom"><span class="progress__time">4</span><span class="progress__label">まとめ</span></a></li>
   </ol>
 </nav>
 
@@ -86,41 +85,18 @@
         <h2 class="head__title">30分の流れ</h2>
       </div>
       <ol class="flow">
-        <li class="fade"><a href="#greet" class="flow__item"><span class="flow__time">0〜3分</span><span class="flow__text">ごあいさつ</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
-        <li class="fade"><a href="#blend" class="flow__item"><span class="flow__time">3〜10分</span><span class="flow__text"><span class="nw">クリスマス ブレンド</span>を知って、味わう</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
-        <li class="fade"><a href="#bliss" class="flow__item"><span class="flow__time">10〜15分</span><span class="flow__text">クランベリー <span class="nw">ブリス バー</span>を知る</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
-        <li class="fade"><a href="#pairing" class="flow__item"><span class="flow__time">15〜25分</span><span class="flow__text">フードペアリング体験</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
-        <li class="fade"><a href="#custom" class="flow__item"><span class="flow__time">25〜30分</span><span class="flow__text">おすすめカスタム・まとめ・質問</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#blend" class="flow__item"><span class="flow__time">1</span><span class="flow__text"><span class="nw">クリスマス ブレンド</span>を<wbr>知って、<wbr>味わう</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#bliss" class="flow__item"><span class="flow__time">2</span><span class="flow__text">クランベリー <span class="nw">ブリス バー</span>を知る</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#pairing" class="flow__item"><span class="flow__time">3</span><span class="flow__text">フードペアリング体験</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
+        <li class="fade"><a href="#custom" class="flow__item"><span class="flow__time">4</span><span class="flow__text">おすすめカスタム・まとめ・質問</span><svg class="flow__arrow"><use href="#i-arrow"/></svg></a></li>
       </ol>
     </div>
   </section>
 
-  <!-- ===== 2. ごあいさつ ===== -->
-  <section class="section section--tint" id="greet" data-section>
-    <div class="container">
-      <div class="head fade">
-        <p class="head__time">0〜3分</p>
-        <h2 class="head__title">ごあいさつ</h2>
-        <p class="head__lead">自己紹介とコーヒーパスポート・サポートツールの確認をします</p>
-      </div>
-      <div class="grid-2">
-        <article class="card card--empty fade">
-          <svg class="card__icon"><use href="#i-person"/></svg>
-          <!-- ここに自己紹介 -->
-        </article>
-        <article class="card card--empty fade">
-          <svg class="card__icon"><use href="#i-bean"/></svg>
-          <!-- ここにコーヒーパスポート・サポートツールの確認 -->
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== 3. クリスマス ブレンドを知る ===== -->
-  <section class="section" id="blend" data-section>
+  <section class="section section--tint" id="blend" data-section>
     <div class="container">
       <div class="head fade">
-        <p class="head__time">3〜10分</p>
         <h2 class="head__title">クリスマス ブレンドを知る</h2>
       </div>
 
@@ -171,10 +147,9 @@
   </section>
 
   <!-- ===== 4. クランベリー ブリス バーを知る ===== -->
-  <section class="section section--tint" id="bliss" data-section>
+  <section class="section" id="bliss" data-section>
     <div class="container">
       <div class="head fade">
-        <p class="head__time">10〜15分</p>
         <h2 class="head__title">クランベリー <span class="nw">ブリス バーを知る</span></h2>
       </div>
 
@@ -224,10 +199,9 @@
   </section>
 
   <!-- ===== 5. どうして合うの？＋ 6. フードペアリング体験 ===== -->
-  <section class="section" id="pairing" data-section>
+  <section class="section section--tint" id="pairing" data-section>
     <div class="container">
       <div class="head fade">
-        <p class="head__time">15〜25分</p>
         <h2 class="head__title">どうして合うの？</h2>
         <p class="head__lead">クリスマス ブレンドとブリス バーの、重なるところを見てみましょう</p>
       </div>
@@ -340,10 +314,9 @@
   </section>
 
   <!-- ===== 7. おすすめカスタム ＋ 8. まとめ・質問 ===== -->
-  <section class="section section--tint" id="custom" data-section>
+  <section class="section" id="custom" data-section>
     <div class="container">
       <div class="head fade">
-        <p class="head__time">25〜30分</p>
         <h2 class="head__title">おすすめカスタム</h2>
       </div>
       <div class="custom fade">
