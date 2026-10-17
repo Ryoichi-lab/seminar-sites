@@ -26,8 +26,8 @@
   --nav-h: 56px;
 
   --font-ja: "Noto Sans JP", system-ui, -apple-system, "Hiragino Sans", sans-serif;
-  /* 見出し：英字・数字は Fredoka、日本語は丸ゴシック（Zen Maru Gothic） */
-  --font-min: "Fredoka", "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+  /* 見出し：英字・数字は Fredoka、日本語は Noto Sans JP（ハロウィンと同じ組み合わせ） */
+  --font-min: "Fredoka", "Noto Sans JP", system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -43,6 +43,7 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--font-ja);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: .02em;
