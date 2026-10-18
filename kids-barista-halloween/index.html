@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kids バリスタ体験 〜ハロウィン ver.〜</title>
+  <meta name="description" content="Kids バリスタ体験 〜ハロウィン ver.〜 TSUTAYA BOOKSTORE MARUNOUCHI">
+  <meta name="theme-color" content="#FBF3E6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== SVG 素材（かわいいハロウィン） ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="s-pumpkin" viewBox="0 0 100 100">
+    <path d="M50 22c-2-8 2-14 8-16" fill="none" stroke="#2E6B3F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M58 12c8-4 16-2 18 4-6 4-14 4-18-4z" fill="#3E8A50"/>
+    <ellipse cx="50" cy="60" rx="42" ry="34" fill="#F08A24"/>
+    <path d="M50 27c-14 8-14 58 0 66M50 27c14 8 14 58 0 66" fill="none" stroke="#D9701A" stroke-width="3"/>
+    <path d="M30 56l8-8 8 8zM54 56l8-8 8 8z" fill="#5A2D0C"/>
+    <path d="M32 70q18 14 36 0q-6 10-18 10t-18-10z" fill="#5A2D0C"/>
+    <circle cx="26" cy="68" r="5" fill="#FF9EA1" opacity=".6"/><circle cx="74" cy="68" r="5" fill="#FF9EA1" opacity=".6"/>
+  </symbol>
+  <symbol id="s-ghost" viewBox="0 0 100 100">
+    <path d="M18 88V46a32 32 0 0 1 64 0v42l-9-7-9 7-9-7-9 7-9-7-9 7z" fill="#fff" stroke="#E6DDF2" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="38" cy="46" rx="5" ry="6" fill="#3B2A4F"/><ellipse cx="62" cy="46" rx="5" ry="6" fill="#3B2A4F"/>
+    <path d="M40 60q10 9 20 0" fill="none" stroke="#3B2A4F" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="30" cy="57" r="5" fill="#FFB3C1" opacity=".7"/><circle cx="70" cy="57" r="5" fill="#FFB3C1" opacity=".7"/>
+  </symbol>
+  <symbol id="s-bat" viewBox="0 0 100 100">
+    <path d="M50 40c-6-10-20-14-34-10 4 4 6 10 4 16 6-2 10 0 12 6 4-4 10-4 14 0 4-4 10-4 14 0 2-6 6-8 12-6-2-6 0-12 4-16-14-4-28 0-34 10z" fill="#6B3FA0"/>
+    <circle cx="50" cy="48" r="13" fill="#6B3FA0"/>
+    <path d="M40 38l3-9 5 7M60 38l-3-9-5 7" fill="#6B3FA0"/>
+    <circle cx="45" cy="47" r="3" fill="#fff"/><circle cx="55" cy="47" r="3" fill="#fff"/>
+    <path d="M45 54q5 4 10 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="s-star" viewBox="0 0 100 100">
+    <path d="M50 8l12 26 28 3-21 19 6 28-25-14-25 14 6-28-21-19 28-3z" fill="#F5C542" stroke="#E0A91E" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="42" cy="50" r="3" fill="#7A5300"/><circle cx="58" cy="50" r="3" fill="#7A5300"/>
+    <path d="M44 58q6 5 12 0" fill="none" stroke="#7A5300" stroke-width="2.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="s-hat" viewBox="0 0 100 100">
+    <path d="M14 78q36 12 72 0-8-6-20-8L54 14c-2-4-6-2-8 2L36 70q-14 2-22 8z" fill="#6B3FA0"/>
+    <path d="M36 66q14 6 28 0l2 8q-16 6-32 0z" fill="#F08A24"/>
+    <path d="M58 30l6 2-4 4z" fill="#F5C542"/>
+  </symbol>
+  <symbol id="s-cat" viewBox="0 0 100 100">
+    <path d="M22 34l6-22 16 14h12l16-14 6 22c6 8 8 18 6 28-4 18-20 28-34 28S20 80 16 62c-2-10 0-20 6-28z" fill="#3B2A4F"/>
+    <ellipse cx="38" cy="52" rx="7" ry="8" fill="#F5C542"/><ellipse cx="62" cy="52" rx="7" ry="8" fill="#F5C542"/>
+    <ellipse cx="38" cy="53" rx="2.5" ry="5" fill="#3B2A4F"/><ellipse cx="62" cy="53" rx="2.5" ry="5" fill="#3B2A4F"/>
+    <path d="M46 64l4 3 4-3M44 70q6 4 12 0" fill="none" stroke="#FFB3C1" stroke-width="2.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="s-frap" viewBox="0 0 100 100">
+    <path d="M58 4l-6 26" stroke="#6B3FA0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M24 34q2-16 26-16t26 16z" fill="#fff" stroke="#E6DDF2" stroke-width="2"/>
+    <path d="M22 34h56l-7 56a6 6 0 0 1-6 5H35a6 6 0 0 1-6-5z" fill="#6E4227"/>
+    <g fill="#2C170B"><circle cx="38" cy="50" r="3"/><circle cx="58" cy="58" r="3"/><circle cx="46" cy="72" r="3"/><circle cx="62" cy="80" r="2.6"/></g>
+    <path d="M22 34h56l-7 56a6 6 0 0 1-6 5H35a6 6 0 0 1-6-5z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+    <ellipse cx="43" cy="62" rx="4" ry="5" fill="#fff"/><ellipse cx="57" cy="62" rx="4" ry="5" fill="#fff"/>
+    <path d="M44 74q6 5 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="s-web" viewBox="0 0 100 100">
+    <g fill="none" stroke="#B9A7D0" stroke-width="1.6">
+      <path d="M0 0L100 100M0 0L100 40M0 0L40 100M0 0L100 0M0 0L0 100"/>
+      <path d="M0 20Q14 14 20 0M0 44Q30 30 44 0M0 70Q46 46 70 0M0 96Q64 64 96 0"/>
+    </g>
+  </symbol>
+  <symbol id="s-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="s-cards" viewBox="0 0 48 48"><rect x="6" y="10" width="20" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="3" transform="rotate(-10 16 24)"/><rect x="22" y="10" width="20" height="28" rx="4" fill="currentColor" transform="rotate(8 32 24)"/></symbol>
+</svg>
+
+<!-- ===== 上部：すすみぐあい と スタンプ ===== -->
+<header class="top" aria-label="すすみぐあい">
+  <div class="top__progress">
+    <span class="top__label">すすみぐあい</span>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-progress><span class="bar__fill" data-progress-fill></span></div>
+  </div>
+  <ol class="stamps" aria-label="かぼちゃスタンプ" data-stamps>
+    <li class="stamp"><svg><use href="#s-pumpkin"/></svg></li>
+    <li class="stamp"><svg><use href="#s-pumpkin"/></svg></li>
+    <li class="stamp"><svg><use href="#s-pumpkin"/></svg></li>
+    <li class="stamp"><svg><use href="#s-pumpkin"/></svg></li>
+  </ol>
+</header>
+
+<main class="app">
+
+  <!-- ===== 0. スタート ===== -->
+  <section class="screen screen--start" data-screen="start">
+    <div class="garland" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <svg class="deco deco--web" aria-hidden="true"><use href="#s-web"/></svg>
+    <svg class="deco deco--bat1 float" aria-hidden="true"><use href="#s-bat"/></svg>
+    <svg class="deco deco--bat2 float float--late" aria-hidden="true"><use href="#s-bat"/></svg>
+
+    <p class="start__en" data-t="start_en"></p>
+    <h1 class="start__title" data-t="start_title"></h1>
+    <p class="ribbon"><span data-t="start_sub"></span></p>
+    <div class="start__chars" aria-hidden="true">
+      <svg class="bob"><use href="#s-ghost"/></svg>
+      <svg class="bob bob--late"><use href="#s-pumpkin"/></svg>
+      <svg class="bob"><use href="#s-frap"/></svg>
+    </div>
+    <p class="lead" data-t="start_lead"></p>
+
+    <div class="name-box">
+      <label class="name-box__label" for="name" data-t="name_label"></label>
+      <input class="name-box__input" id="name" type="text" maxlength="12" autocomplete="off" data-name-input>
+      <p class="small" data-t="name_note"></p>
+    </div>
+    <button type="button" class="btn btn--orange btn--big" data-go="flow" data-t="start_btn"></button>
+  </section>
+
+  <!-- ===== 1. きょうのながれ ===== -->
+  <section class="screen" data-screen="flow" hidden>
+    <h2 class="title" data-t="flow_title"></h2>
+    <ol class="flow">
+      <li class="flow__card" data-flow="0"><span class="flow__no">1</span><span class="flow__text" data-t="flow_1"></span><span class="flow__check"><svg><use href="#s-check"/></svg></span></li>
+      <li class="flow__card" data-flow="1"><span class="flow__no">2</span><span class="flow__text" data-t="flow_2"></span><span class="flow__check"><svg><use href="#s-check"/></svg></span></li>
+      <li class="flow__card" data-flow="2"><span class="flow__no">3</span><span class="flow__text" data-t="flow_3"></span><span class="flow__check"><svg><use href="#s-check"/></svg></span></li>
+      <li class="flow__card" data-flow="3"><span class="flow__no">4</span><span class="flow__text" data-t="flow_4"></span><span class="flow__check"><svg><use href="#s-check"/></svg></span></li>
+    </ol>
+    <button type="button" class="btn btn--purple btn--big" data-stamp="0" data-t="apron_btn"></button>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="start">もどる</button>
+      <button type="button" class="btn btn--orange" data-go="frap">つぎへ</button>
+    </div>
+  </section>
+
+  <!-- ===== 2. ① お化けのフラペチーノ ===== -->
+  <section class="screen" data-screen="frap" hidden>
+    <p class="chapter">①</p>
+    <h2 class="title" data-t="frap_title"></h2>
+    <div class="ph photo"><img src="images/ghost-frappuccino.jpg" alt="おばけのフラペチーノ"></div>
+    <p class="lead" data-t="frap_desc"></p>
+
+    <div class="steps" data-frap-steps>
+      <!-- STEPS_FRAPPUCCINO があれば1つずつ、無ければ「バリスタさんのお話をきいてね！」 -->
+    </div>
+
+    <button type="button" class="btn btn--purple btn--big" data-stamp="1" data-t="done_btn"></button>
+    <button type="button" class="btn btn--yellow" data-go="deco">ミニゲームであそぶ</button>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="flow">もどる</button>
+      <button type="button" class="btn btn--orange" data-go="tumbler">つぎへ</button>
+    </div>
+  </section>
+
+  <!-- ===== ミニゲーム① デコレーション ===== -->
+  <section class="screen" data-screen="deco" hidden>
+    <p class="chapter chapter--game">ミニゲーム①</p>
+    <h2 class="title" data-t="deco_title"></h2>
+    <p class="small" data-t="deco_hint"></p>
+
+    <div class="deco-stage" data-deco-stage aria-label="フラペチーノのデコレーション">
+      <div class="deco-stage__cup" data-deco-cup></div>
+      <div class="deco-stage__stickers" data-deco-stickers></div>
+    </div>
+    <p class="deco-done" data-deco-done hidden></p>
+
+    <div class="palette" role="group" aria-label="シール" data-palette></div>
+    <div class="row">
+      <button type="button" class="btn btn--ghost btn--sm" data-deco-clear>ぜんぶけす</button>
+      <button type="button" class="btn btn--orange" data-deco-finish>かんせい！</button>
+    </div>
+    <button type="button" class="btn btn--purple" data-deco-save hidden>がぞうでほぞん</button>
+    <p class="note" data-t="deco_note"></p>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="frap">もどる</button>
+      <button type="button" class="btn btn--orange" data-go="tumbler">つぎへ</button>
+    </div>
+  </section>
+
+  <!-- ===== 3. ② タンブラー ===== -->
+  <section class="screen" data-screen="tumbler" hidden>
+    <p class="chapter">②</p>
+    <h2 class="title" data-t="tumbler_title"></h2>
+    <div class="ph photo"><img src="images/halloween-tumbler.jpg" alt="ハロウィンのタンブラー"></div>
+    <p class="lead" data-t="tumbler_desc"></p>
+    <button type="button" class="btn btn--purple btn--big" data-stamp="2" data-t="done_btn"></button>
+    <button type="button" class="btn btn--yellow" data-go="draw">ミニゲームであそぶ</button>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="frap">もどる</button>
+      <button type="button" class="btn btn--orange" data-go="record">つぎへ</button>
+    </div>
+  </section>
+
+  <!-- ===== ミニゲーム② したがきボード ===== -->
+  <section class="screen" data-screen="draw" hidden>
+    <p class="chapter chapter--game">ミニゲーム②</p>
+    <h2 class="title" data-t="draw_title"></h2>
+    <p class="small" data-t="draw_hint"></p>
+
+    <div class="board">
+      <canvas class="board__canvas" data-draw-canvas aria-label="タンブラーのおえかき"></canvas>
+    </div>
+
+    <div class="pens" role="group" aria-label="ペンのいろ" data-pens></div>
+    <div class="row">
+      <div class="sizes" role="group" aria-label="ペンのふとさ" data-sizes>
+        <button type="button" class="size" aria-pressed="true" data-size="0"><span class="size__dot size__dot--s"></span>ほそい</button>
+        <button type="button" class="size" aria-pressed="false" data-size="1"><span class="size__dot size__dot--l"></span>ふとい</button>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" class="btn btn--ghost btn--sm" data-draw-undo>1つもどす</button>
+      <button type="button" class="btn btn--ghost btn--sm" data-draw-clear>ぜんぶけす</button>
+    </div>
+    <button type="button" class="btn btn--purple" data-draw-save>がぞうでほぞん</button>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="tumbler">もどる</button>
+      <button type="button" class="btn btn--orange" data-go="record">つぎへ</button>
+    </div>
+  </section>
+
+  <!-- ===== 6. きょうのきろく ===== -->
+  <section class="screen" data-screen="record" hidden>
+    <h2 class="title" data-t="record_title"></h2>
+    <div class="record">
+      <img class="record__img" alt="きょうのきろくカード" data-record-img>
+    </div>
+    <button type="button" class="btn btn--purple btn--big" data-record-save>がぞうでほぞん</button>
+    <p class="parent" data-t="parent_note"></p>
+    <div class="nav">
+      <button type="button" class="btn btn--ghost" data-go="tumbler">もどる</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== いつでも開けるボタン ===== -->
+<nav class="dock" aria-label="いつでも あそべる">
+  <button type="button" class="dock__btn dock__btn--purple" data-open="memory" aria-label="おばけ しんけいすいじゃく"><svg aria-hidden="true"><use href="#s-cards"/></svg>カードあわせ</button>
+  <button type="button" class="dock__btn dock__btn--orange" data-open="quiz" aria-label="まちじかんクイズ"><b aria-hidden="true">？</b>クイズ</button>
+</nav>
+
+<footer class="footer">
+  <p class="footer__store" data-t="footer_store"></p>
+  <button type="button" class="btn btn--ghost btn--sm" data-open="reset" data-t="reset_btn"></button>
+</footer>
+
+<!-- ===== クイズ ===== -->
+<div class="modal" data-modal="quiz" hidden>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+    <button type="button" class="modal__close" data-close aria-label="とじる">×</button>
+    <h2 class="modal__title" id="quiz-title">まちじかんクイズ</h2>
+    <div data-quiz></div>
+  </div>
+</div>
+
+<!-- ===== しんけいすいじゃく ===== -->
+<div class="modal" data-modal="memory" hidden>
+  <div class="modal__box modal__box--wide" role="dialog" aria-modal="true" aria-labelledby="mem-title">
+    <button type="button" class="modal__close" data-close aria-label="とじる">×</button>
+    <h2 class="modal__title" id="mem-title">おばけ しんけいすいじゃく</h2>
+    <div class="levels" role="group" aria-label="むずかしさ">
+      <button type="button" class="level" aria-pressed="false" data-level="easy">かんたん</button>
+      <button type="button" class="level" aria-pressed="true" data-level="normal">ふつう</button>
+    </div>
+    <p class="mem-count">めくったかいすう：<b data-mem-count>0</b></p>
+    <div class="mem-grid" data-mem-grid></div>
+    <p class="mem-clear" data-mem-clear hidden>ぜんぶ そろったね！</p>
+    <button type="button" class="btn btn--orange" data-mem-restart>もういちど</button>
+  </div>
+</div>
+
+<!-- ===== やりなおし確認 ===== -->
+<div class="modal" data-modal="reset" hidden>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="reset-title">
+    <svg class="modal__icon" aria-hidden="true"><use href="#s-ghost"/></svg>
+    <p class="modal__text" id="reset-title" data-t="reset_confirm"></p>
+    <div class="row">
+      <button type="button" class="btn btn--ghost" data-close>やめる</button>
+      <button type="button" class="btn btn--orange" data-reset>やりなおす</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== スタンプゲット ===== -->
+<div class="modal modal--stamp" data-modal="stamp" hidden>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="stamp-title">
+    <svg class="stamp-big" aria-hidden="true"><use href="#s-pumpkin"/></svg>
+    <p class="modal__title" id="stamp-title">スタンプ ゲット！</p>
+    <p class="modal__text" data-stamp-msg></p>
+    <button type="button" class="btn btn--orange" data-close>やったね！</button>
+  </div>
+</div>
+
+<canvas class="confetti" data-confetti aria-hidden="true"></canvas>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

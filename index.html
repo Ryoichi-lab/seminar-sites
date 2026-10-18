@@ -80,6 +80,14 @@
     .card--halloween .card__img { background-image: url("halloween-blend/images/jack-o-lantern.jpg"); background-position: center 40%; }
     .card--halloween .card__en { color: #B5383A; font-family: "Fredoka", sans-serif; letter-spacing: .08em; }
     .card--halloween .card__title { color: #1E4620; font-family: "Fredoka", "Noto Sans JP", sans-serif; font-weight: 600; letter-spacing: .02em; }
+    .card--kids { background: #FBF3E6; }
+    .card--kids .card__img {
+      display: grid; place-items: center;
+      background: radial-gradient(ellipse at 50% 45%, #8A5BC4 0%, #6B3FA0 55%, #4A2A72 100%);
+    }
+    .card--kids .card__img svg { width: 120px; height: 72px; }
+    .card--kids .card__en { color: #F08A24; font-family: "Fredoka", sans-serif; letter-spacing: .08em; font-weight: 600; }
+    .card--kids .card__title { color: #6B3FA0; }
   </style>
 </head>
 <body>
@@ -140,6 +148,23 @@
         <p class="card__en">HALLOWEEN BLEND</p>
         <p class="card__title">MARUNOUCHI HALLOWEEN BLEND</p>
         <p class="card__sub">バリスタが考えた、ハロウィン特別ブレンド</p>
+      </div>
+    </a>
+    <a class="card card--kids" href="kids-barista-halloween/">
+      <div class="card__img">
+        <svg viewBox="0 0 100 60" aria-hidden="true">
+          <ellipse cx="34" cy="38" rx="20" ry="16" fill="#F08A24"/>
+          <path d="M34 22v-6" stroke="#1E5B3A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M26 34l4-4 4 4zM34 34l4-4 4 4z" fill="#4A2A72"/>
+          <path d="M25 42q9 7 18 0" stroke="#4A2A72" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M66 52V30a12 12 0 0 1 24 0v22l-4-4-4 4-4-4-4 4-4-4z" fill="#fff"/>
+          <circle cx="73" cy="31" r="2.2" fill="#4A2A72"/><circle cx="83" cy="31" r="2.2" fill="#4A2A72"/>
+        </svg>
+      </div>
+      <div class="card__body">
+        <p class="card__en">KIDS BARISTA</p>
+        <p class="card__title">Kids バリスタ体験</p>
+        <p class="card__sub">〜ハロウィン ver.〜</p>
       </div>
     </a>
   </main>
